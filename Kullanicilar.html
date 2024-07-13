@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Envaneri</title>
+    <link rel="stylesheet" href="/styles/scss/main.css">
+</head>
+<body>
+    <div class="yeni">     <header class="header">
+        <div class="title">
+         
+            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ara">
+            <button><img src="/images/logout.svg" alt="Search"></button>
+        </div></div>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="/images/worker1.svg" alt="Profile Picture">
+                <h3>Fırat ÖZKAN</h3>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="active"><a href="#"><img src="/images/envantersiyah.svg"><p>Envanter</p></a></li>
+                    <li><a href="#"><img src="/images/yetkilendirme.svg"><p>Yetkilendirme</p></a></li>
+                    <li><a href="#"><img src="/images/key.svg"><p>Lisans Anahtarı Üret</p></a></li>
+                    <li><a href="#"><img src="/images/lisansyetkileri.svg"><p>Lisans Yetkileri</p></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h3 style=" color: rgba(40, 152, 236, 1) ">
+              <img src="/images/mavibox.svg" alt="Mavi Box" /> Envanteri
+            </h3>
+            <h4 style=" margin-left: 2%;color:rgba(40, 152, 236, 1);">
+              Proje - Controller - Metot
+            </h4>
+            <button class="detailekle-btn" onClick="openModal()" style=" margin-left:2%">
+              Yeni Kullanici Ekle
+            </button>
+         
+            <section class="content">
+              <div class="tablenew" id="data-table">
+                <table>
+                  <thead>
+                    <tr>
+                    
+                      <th>No</th>
+                      <th>Ad</th>
+                      <th>Soyad</th>
+                      <th>Kullanıcı Adı</th>
+                      <th>E-Posta</th>
+                      <th>Tel No</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1856</td>
+                      <td>Batuhan</td>
+                      <td>Yıldız</td>
+                      <td>batuhan_yildiz</td>
+                      <td>batuhanyildiz@izmir.bel.tr</td>
+                      <td>5313187980</td>
+                      <td>
+                        <button class="detail-btn" onClick="duzenleopenModal()">
+                          Düzenle
+                        </button>
+                        <button class="detail-btn" onClick="newopenModal()">
+                          Detay
+                        </button>
+                        <button class="detailnew-btn" onClick={openModal}>
+                          Sil
+                        </button>
+                      </td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </main>
+    </div>  <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modalbasligi">
+                <p>Proje Detayları</p>
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+        </div>
+            <form class="bform">
+                <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <button class="form-btn" onclick="openModal()">Kaydet</button>
+                                  
+                <button class="formvazgec-btn" onclick="openModal()">Vazgeç</button>
+            </div>
+          
+            </form>
+        </div>
+    </div>
+
+    <div class="duzenlememodali" id="modalduzenle">
+    
+        <div class="duzenlememodali-content">
+          <div class="icerikcolumn">
+        <div class="modalbasligi">
+      <p>Kullanıcı Düzenle</p>
+      <span class="close" onclick="duzenlecloseModal()" >
+        &times;
+      </span>
+    </div>
+    <div class="row-container">
+          <div class="user-info">
+            <form>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" />
+
+              <label for="address">Address:</label>
+              <input type="text" id="address" name="address" />
+
+              <input type="submit" class="detail-btn" value="Güncelle" />
+              <input type="submit" class="formsil-btn" value="Sil" />
+            </form>
+          </div>
+          <div class="data-list">
+            <ul>
+              <li>Data Item 1</li>
+              <li>Data Item 2</li>
+              <li>Data Item 3</li>
+              <li>Data Item 4</li>
+              <li>Data Item 5</li>
+              <li>Data Item 6</li>
+              <li>Data Item 7</li>
+              <li>Data Item 8</li>
+              <li>Data Item 9</li>
+              <li>Data Item 10</li>
+            </ul>
+          </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    <div class="detaymodali" id="newmyModal">
+    
+        <div class="detaymodali-content">
+          <div class="icerikcolumn">
+        <div class="modalbasligi">
+      <p>Kullanıcı Detayı</p>
+      <span class="close" onclick="newcloseModal()" >
+        &times;
+      </span>
+    </div>
+  
+    <div class="row-container">
+          <div class="user-info">
+            <form>
+              <label for="username">Username:</label>
+              <input 
+        placeholder="Enter text..." 
+     
+        maxLength={20} 
+        minLength={5} 
+        required 
+        class="core-textbox"
+      />
+
+              <label for="email">Email:</label>
+              <input 
+        placeholder="Enter text..." 
+     
+        maxLength={20} 
+        minLength={5} 
+        required 
+        class="core-textbox"
+      />
+
+              <label for="phone">Phone:</label>
+              <input 
+        placeholder="Enter text..." 
+     
+        maxLength={20} 
+        minLength={5} 
+        required 
+        class="core-textbox"
+      />
+
+              <label for="address">Address:</label>
+              <input 
+        placeholder="Enter text..." 
+     
+        maxLength={20} 
+        minLength={5} 
+        required 
+        class="core-textbox"
+      />
+      <PasswordInput placeholder="şifre girirniz"/>
+
+              <input type="submit" class="detail-btn" value="Güncelle" />
+              <input type="submit" class="formsil-btn" value="Sil" />
+            </form>
+          </div>
+          <div class="data-list">
+            <ul>
+              <li>Data Item 1</li>
+              <li>Data Item 2</li>
+              <li>Data Item 3</li>
+              <li>Data Item 4</li>
+              <li>Data Item 5</li>
+              <li>Data Item 6</li>
+              <li>Data Item 7</li>
+              <li>Data Item 8</li>
+              <li>Data Item 9</li>
+              <li>Data Item 10</li>
+            </ul>
+          </div>
+          </div>
+          <div class="modalaltbasligi">
+      <p>Kullanıcı Detayı</p>
+  <div class="table-containernew">
+      <table>
+        <thead>
+          <tr>
+            <th>İşlemlemler</th>
+            <th>Kullanıcı Adı</th>
+            <th>İşlemeler</th>
+            <th>Lisans Anahtarları</th>
+            <th>Kullanıcı Adı</th>
+            <th>İşlemeler</th>
+            <th>Lisans Anahtarları</th>
+            <th>Kullanıcı Adı</th>
+            <th>İşlemeler</th>
+            
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>
+              <button class="detayonayla-btn" >
+                Düzenle
+              </button>
+           
+              <button class="detayvazgec-btn" >
+                Sil
+              </button>
+            </td>
+            <td>sHrJv1z8lA...OnS1Q==</td>
+            <td>yazilim.wapi.usr</td>
+            <td>sHrJv1z8lA...OnS1Q==</td>
+            <td>yazilim.wapi.usr</td>
+            <td>sHrJv1z8lA...OnS1Q==</td>
+            <td>yazilim.wapi.usr</td>
+            <td>sHrJv1z8lA...OnS1Q==</td>
+            <td>yazilim.wapi.usr</td>
+          
+          </tr>
+  
+        </tbody>
+      </table>
+      </div>
+    
+    </div>
+    <div class="modalaltbasligi">
+      <p>Kullanıcı Detayı</p>
+  <div class="table-containernew">
+      <table>
+        <thead>
+          <tr>
+            <th>İşlemlemler</th>
+            <th>Kullanıcı Adı</th>
+            <th>İşlemeler</th>
+            <th>Lisans Anahtarları</th>
+            <th>Kullanıcı Adı</th>
+            <th>İşlemeler</th>
+            <th>Lisans Anahtarları</th>
+            <th>Kullanıcı Adı</th>
+            <th>İşlemeler</th>
+            
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>
+              <button class="detayonayla-btn" >
+                Düzenle
+              </button>
+           
+              <button class="detayvazgec-btn" >
+                Sil
+              </button>
+            </td>
+            <td>sHrJv1z8lA...OnS1Q==</td>
+            <td>yazilim.wapi.usr</td>
+            <td>sHrJv1z8lA...OnS1Q==</td>
+            <td>yazilim.wapi.usr</td>
+            <td>sHrJv1z8lA...OnS1Q==</td>
+            <td>yazilim.wapi.usr</td>
+            <td>sHrJv1z8lA...OnS1Q==</td>
+            <td>yazilim.wapi.usr</td>
+          
+          </tr>
+  
+        </tbody>
+      </table>
+      </div>
+    
+    </div>
+    
+        </div>
+      </div>
+      
+      </div>
+
+    <script src="/styles/script.js"></script>
+</body>
+</html>

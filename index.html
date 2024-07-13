@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Envaneri</title>
+    <link rel="stylesheet" href="/styles/scss/main.css">
+</head>
+<body>
+    <div class="yeni">     <header class="header">
+        <div class="title">
+         
+            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ara">
+            <button><img src="/images/logout.svg" alt="Search"></button>
+        </div></div>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="/images/worker1.svg" alt="Profile Picture">
+                <h3>Fırat ÖZKAN</h3>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="active"><a href="#"><img src="/images/envantersiyah.svg"><p>Envanter</p></a></li>
+                    <li><a href="#"><img src="/images/yetkilendirme.svg"><p>Yetkilendirme</p></a></li>
+                    <li><a href="#"><img src="/images/key.svg"><p>Lisans Anahtarı Üret</p></a></li>
+                    <li><a href="#"><img src="/images/lisansyetkileri.svg"><p>Lisans Yetkileri</p></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+       
+          <h3 style="color:rgba(40, 152, 236, 1)"><img  src="/images/mavibox.svg"> Envanteri</h3>
+          <h4 style="margin-left: 2%;color:rgba(40, 152, 236, 1)">Proje - Controller - Metot</h4>
+            <section class="content">
+                <div class="treeview">
+                    <ul>
+                        <li>
+                            <span class="toggle">
+                                <img src="/images/add.svg" class="toggle-icon" style="margin-right: 10px;"><span style="margin-top: 5px;" class="toggle-text">BaseWAPI</span>
+                            </span>
+                            <ul class="hidden">
+                                <li>
+                                    <span class="newtoggle">
+                                        <img src="/images/add.svg" class="toggle-icon" style="margin-right: 10px;"><span style="margin-top: 5px;" class="toggle-text">BaseWAPIController</span>
+                                    </span></li>
+                                <li><img src="/images/add.svg" class="toggle-icon" style="margin-right: 10px;"><span class="toggle-text">Yetki Kontrol</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                          
+                            <span class="toggle">
+                                <img src="/images/add.svg" class="toggle-icon" style="margin-right: 10px;"><span style="margin-top: 5px;" class="toggle-text">PersonelWAPI</span>
+                            </span>
+                            <ul class="hidden">
+                                <li><img src="/images/add.svg" class="toggle-icon" style="margin-right: 10px;"><span class="toggle-text">PersonelWAPIController</span></li>
+                                <li><img src="/images/add.svg" class="toggle-icon" style="margin-right: 10px;"><span class="toggle-text">Personelleri Getir</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table" id="data-table">
+                    <p onclick="openModal()" style="color: rgba(40, 152, 236, 1);">Detayı Görmek İçin Tıklayınız</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lisans Anahtarları</th>
+                                <th>Kullanıcı Adı</th>
+                                <th>Detay</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>sHrJv1z8lA...OnS1Q==</td>
+                                <td>yazilim.wapi.usr</td>
+                                <td><button class="detail-btn" onclick="openModal()">Detay</button></td>
+                           
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modalbasligi">
+                <p>Proje Detayları</p>
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+        </div>
+            <form class="bform">
+                <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+          
+            </form>
+        </div>
+    </div>
+
+    <script src="/styles/script.js"></script>
+</body>
+</html>

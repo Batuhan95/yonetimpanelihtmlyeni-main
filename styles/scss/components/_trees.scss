@@ -1,0 +1,32 @@
+.treeview {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        padding: 5px 0;
+        color: rgba(40, 152, 236, 1);
+  
+        ul {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+
+  
+    .treeview {
+      width: 30%;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  
+
+  }
