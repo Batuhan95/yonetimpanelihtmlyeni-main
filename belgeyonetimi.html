@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Envaneri</title>
+    <link rel="stylesheet" href="/styles/scss/main.css">
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+</head>
+<body>
+    <div class="yeni">     <header class="header">
+        <div class="title">
+         
+            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ara">
+            <button><img src="images/logout.svg" alt="Search"></button>
+        </div></div>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/worker1.svg" alt="Profile Picture">
+                <h3>Fırat ÖZKAN</h3>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><img src="images/envantersiyah.svg"><p>Envanter</p></a></li>
+                    <li class="active"><a href="#"><img src="images/yetkilendirme.svg"><p>Yetkilendirme</p></a></li>
+                    <li><a href="#"><img src="images/key.svg"><p>Lisans Anahtarı Üret</p></a></li>
+                    <li><a href="#"><img src="images/lisansyetkileri.svg"><p>Lisans Yetkileri</p></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+       
+          <h3 style="color:rgba(40, 152, 236, 1)"><img  src="/images/mavibox.svg"> Envanteri</h3>
+          <h4 style="margin-left: 2%;color:rgba(40, 152, 236, 1)">Proje - Controller - Metot</h4>
+          <button class="detailekle-btn" onclick="openModal()" style="margin-left: 2%">Yeni Ekle</button>
+         <section class="content" style="flex-direction: column;">
+                <form class="eklemeform">
+                    <div>
+                    <label for="license-key">Lisans Anahtarı</label>
+                    <input type="text" id="license-key" name="license-key" required>
+                </div>
+                <div>
+                    <label for="username">Kullanıcı Adı</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="license-key">Lisans Anahtarı</label>
+                    <input type="text" id="license-key" name="license-key" required>
+                </div>
+                <div>
+                    <label for="username">Kullanıcı Adı</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="license-key">Lisans Anahtarı</label>
+                    <input type="text" id="license-key" name="license-key" required>
+                </div>
+                <div>
+                    <label for="username">Kullanıcı Adı</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="license-key">Lisans Anahtarı</label>
+                    <input type="text" id="license-key" name="license-key" required>
+                </div>
+                <div>
+                    <label for="username">Tarih</label>
+                    <input type="date" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="username">Dosya</label>
+                    <button id="uploadButton" class="uploadbtn" type="button">Upload Files</button>
+                    <input type="file" id="fileInput" multiple style="display: none;">
+                   
+                </div>
+                <div>
+            </div>
+              
+                </form>
+                <div class="tablenew" id="data-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Düzenle</th>
+                                <th>Belge</th>
+                                <th>Birim</th>
+                                <th>Tip</th>
+                                <th>Oluşturma Sil</th>
+                                <th>İşlemeler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button class="detail-btn" onclick="toggleForm(this)">Düzenle</button></td>
+                                <td>sHrJv1z8lA...OnS1Q==</td>
+                                <td>yazilim.wapi.usr</td>
+                                <td>tip</td>
+                                <td>oluşturma sil</td>
+                                <td>
+                                    <button class="detailnew-btn" onclick="openModal()">Sil</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><button class="detail-btn" onclick="toggleForm(this)">Düzenle</button></td>
+                                <td>belge</td>
+                                <td>birim</td>
+                                <td>tip</td>
+                                <td>oluşturma sil</td>
+                                <td>
+                                    <button class="detailnew-btn" onclick="openModal()">Sil</button>
+                                </td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <script>
+                    function toggleForm(button) {
+                        var currentRow = button.parentNode.parentNode;
+                        
+                        // Get the values from the current row's tds
+                        var belge = currentRow.children[1].textContent;
+                        var birim = currentRow.children[2].textContent;
+                        var tip = currentRow.children[3].textContent;
+                        var olusturmaSil = currentRow.children[4].textContent;
+                        
+                        // Check if the next row is already a form row
+                        var nextRow = currentRow.nextElementSibling;
+                        if (nextRow && nextRow.classList.contains('form-row')) {
+                            // If form row is already visible, hide it
+                            nextRow.parentNode.removeChild(nextRow);
+                        } else {
+                            // Remove any other visible form rows
+                            var allFormRows = document.querySelectorAll('.form-row');
+                            allFormRows.forEach(function(row) {
+                                row.parentNode.removeChild(row);
+                            });
+                
+                            // Create a new form row
+                            var formRow = document.createElement('tr');
+                            formRow.classList.add('form-row');
+                
+                            formRow.innerHTML = `
+                                <td colspan="6">
+                                    <form id="editForm">
+                                        <label for="belge">Belge:</label>
+                                        <input type="text" id="belge" name="belge" value="${belge}">
+                                        <label for="birim">Birim:</label>
+                                        <input type="text" id="birim" name="birim" value="${birim}">
+                                        <label for="tip">Tip:</label>
+                                        <input type="text" id="tip" name="tip" value="${tip}">
+                                        <label for="olusturmaSil">Oluşturma Sil:</label>
+                                        <input type="text" id="olusturmaSil" name="olusturmaSil" value="${olusturmaSil}">
+                                        <button class="detail-btn" type="button" onclick="submitForm()">Kaydet</button>
+                                        <button class="detailnew-btn" type="button" onclick="cancelForm(this)">İptal</button>
+                                    </form>
+                                </td>
+                            `;
+                
+                            // Insert the form row after the current row
+                            currentRow.parentNode.insertBefore(formRow, currentRow.nextSibling);
+                        }
+                    }
+                
+                    function submitForm() {
+                        // Form submission logic here
+                        alert("Form submitted!");
+                    }
+                
+                    function cancelForm(button) {
+                        var formRow = button.parentNode.parentNode.parentNode;
+                        formRow.parentNode.removeChild(formRow);
+                    }
+                </script>
+                
+                
+                
+                
+            </section>
+        </main>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modalbasligi">
+                <p>Proje Detayları</p>
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+        </div>
+            <form class="bform">
+                <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <button class="form-btn" onclick="openModal()">Kaydet</button>
+                                  
+                <button class="formvazgec-btn" onclick="openModal()">Vazgeç</button>
+            </div>
+          
+            </form>
+        </div>
+    </div>
+
+    <script src="/styles/script.js"></script>
+</body>
+</html>
