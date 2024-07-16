@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proje Envaneri</title>
+    <title>Kullanıcılar</title>
     <link rel="stylesheet" href="/styles/scss/main.css">
 </head>
 <body>
@@ -41,6 +41,18 @@
             </h4>
             <button class="detailekle-btn" onClick="openModal()" style=" margin-left:2%">
               Yeni Kullanici Ekle
+            </button>
+            <button class="detailekle-btn" onClick="yetkileropenModal()" style=" margin-left:2%">
+              Yetkiler
+            </button>
+            <button class="detailekle-btn" onClick="groupopenModal()" style=" margin-left:2%">
+              Grup
+            </button>
+            <button class="detailekle-btn" onClick="tumkullaniciopenModal()" style=" margin-left:2%">
+              Kullanıcı Tüm Yetkiler
+            </button>
+            <button class="detailekle-btn" onClick="tumviewopenModal()" style=" margin-left:2%">
+              Tüm Viewlar
             </button>
          
             <section class="content">
@@ -189,7 +201,7 @@
     <div class="detaymodali" id="newmyModal">
     
         <div class="detaymodali-content">
-          <div class="icerikcolumn">
+          <div class="icerikcolumn" style="padding: 1%;">
         <div class="modalbasligi">
       <p>Kullanıcı Detayı</p>
       <span class="close" onclick="newcloseModal()" >
@@ -261,66 +273,62 @@
           </div>
           </div>
           <div class="modalaltbasligi">
-      <p>Kullanıcı Detayı</p>
+      <p>Kullanıcı Kişisel Yetkileri</p>
   <div class="table-containernew">
-      <table>
-        <thead>
-          <tr>
-            <th>İşlemlemler</th>
-            <th>Kullanıcı Adı</th>
-            <th>İşlemeler</th>
-            <th>Lisans Anahtarları</th>
-            <th>Kullanıcı Adı</th>
-            <th>İşlemeler</th>
-            <th>Lisans Anahtarları</th>
-            <th>Kullanıcı Adı</th>
-            <th>İşlemeler</th>
-            
-
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-          <td>
-              <button class="detayonayla-btn" >
-                Düzenle
-              </button>
-           
-              <button class="detayvazgec-btn" >
-                Sil
-              </button>
-            </td>
-            <td>sHrJv1z8lA...OnS1Q==</td>
-            <td>yazilim.wapi.usr</td>
-            <td>sHrJv1z8lA...OnS1Q==</td>
-            <td>yazilim.wapi.usr</td>
-            <td>sHrJv1z8lA...OnS1Q==</td>
-            <td>yazilim.wapi.usr</td>
-            <td>sHrJv1z8lA...OnS1Q==</td>
-            <td>yazilim.wapi.usr</td>
+    <table>
+      <thead>
+        <tr>
+          <th>İşlemlemler</th>
+          <th>Yetki No</th>
+          <th>Yetki Adı</th>
+          <th>Aktif</th>
+          <th>Erişim</th>
+          <th>Başlangıç Tarihi</th>
+          <th>Bitiş Tarihi</th>
+          <th>Açıklama</th>
+          <th>Birim Adı</th>
           
-          </tr>
-  
-        </tbody>
-      </table>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td>
+            <button class="detayonayla-btn" onclick="toggleForm(this)">
+              Düzenle
+            </button>
+         
+            <button class="detayvazgec-btn" >
+              Sil
+            </button>
+          </td>
+          <td>15</td>
+          <td>Personel Yönetimi</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td>01.01.2020</td>
+          <td>01.01.2030</td>
+          <td>deneme</td>
+          <td>açıklama</td>
+        
+        </tr>
+
+      </tbody>
+    </table>
       </div>
     
     </div>
     <div class="modalaltbasligi">
-      <p>Kullanıcı Detayı</p>
+      <p>Kullanıcı Grupları</p>
   <div class="table-containernew">
       <table>
         <thead>
           <tr>
             <th>İşlemlemler</th>
-            <th>Kullanıcı Adı</th>
-            <th>İşlemeler</th>
-            <th>Lisans Anahtarları</th>
-            <th>Kullanıcı Adı</th>
-            <th>İşlemeler</th>
-            <th>Lisans Anahtarları</th>
-            <th>Kullanıcı Adı</th>
-            <th>İşlemeler</th>
+            <th>Grup No</th>
+            <th>Grup Adı</th>
+            <th>Açıklama</th>
+          
             
 
           </tr>
@@ -329,21 +337,17 @@
           <tr>
           <td>
               <button class="detayonayla-btn" >
-                Düzenle
+                Yetkiler
               </button>
            
               <button class="detayvazgec-btn" >
                 Sil
               </button>
             </td>
-            <td>sHrJv1z8lA...OnS1Q==</td>
-            <td>yazilim.wapi.usr</td>
-            <td>sHrJv1z8lA...OnS1Q==</td>
-            <td>yazilim.wapi.usr</td>
-            <td>sHrJv1z8lA...OnS1Q==</td>
-            <td>yazilim.wapi.usr</td>
-            <td>sHrJv1z8lA...OnS1Q==</td>
-            <td>yazilim.wapi.usr</td>
+            <td>15</td>
+            <td>Yazılım Ar-Ge Grubu	</td>
+            <td>	İBB Yazılım Ar-Ge Grubu</td>
+         
           
           </tr>
   
@@ -357,6 +361,478 @@
       </div>
       
       </div>
+   
+      <div class="detaymodali" id="groupmyModal">
+    <div class="detaymodali-content">
+        <div class="icerikcolumn" style="padding: 1%;">
+            <div class="modalbasligi">
+                <p>Gruplar</p>
+                <span class="close" onclick="groupcloseModal()">
+                    &times;
+                </span>
+            </div>
+
+            <div class="row-container">
+                <div class="modalaltbasligi">
+                    <div class="table-containernew">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Grup Adı</th>
+                                    <th>Açıklama</th>
+                                    <th>Grup No</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Example row for the tree view structure -->
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1">Adres Numaralama</label>
+                                    </td>
+                                    <td>Bilgi işlem daire başkanlığına bağlı birim</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox2">
+                                        <label for="checkbox2">Bilgi Ağları Grubu</label>
+                                    </td>
+                                    <td>Bilgi işlem Dairesi Başkanlığına bağlı birim</td>
+                                    <td>35</td>
+                                </tr>
+                                <!-- Add additional rows as necessary -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container" style="display: flex;">
+                <button class="detayonayla-btn" style="margin-right: 5px;">Gruplara Kullanıcıyı Ekle</button>
+                <button class="detayonayla-btn" style="margin-right: 5px;">Grup Kullanıcılarını Seçili Gruplara Ekle</button>
+                <button class="detayonayla-btn">Seçili Grupların Kullanıcılarını Gruba Ekle</button>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <div class="detaymodali" id="yenimyModal">
+    <div class="detaymodali-content">
+        <div class="icerikcolumn">
+            <div class="modalbasligi">
+                <p>Yetkiler</p>
+                <span class="close" onclick="yetkilercloseModal()">
+                    &times;
+                </span>
+            </div>
+
+            <div class="row-container">
+                <div class="modalaltbasligi">
+                    <div class="table-containernew">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Yetki No</th>
+                                    <th>Yetki Adı</th>
+                                    <th>Açıklama</th>
+                                    <th>Grup Adı</th>
+                                </tr>
+                                <tr>
+                                    <th><input type="text" id="filterYetkiNo" placeholder=""></th>
+                                    <th><input type="text" id="filterYetkiAdi" placeholder=""></th>
+                                    <th><input type="text" id="filterAciklama" placeholder=""></th>
+                                    <th><input type="text" id="filterGrupAdi" placeholder=""></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>214</td>
+                                    <td>UabYetki</td>
+                                    <td>Uab sayfasına giriş yapabilmek için bu yetki gerekli</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>212</td>
+                                    <td>ManageEngineBirimSecimi</td>
+                                    <td>Manage engine içinde birim seçebilir yetkisi</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>211</td>
+                                    <td>AcilIzmirAdbisSmsGonderimi</td>
+                                    <td>Acil izmir yönetim paneli içerisinde bulunan Adbis gönderimi</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>210</td>
+                                    <td>ItfaiyeSubeMuduruSMSYetki</td>
+                                    <td>ItfaiyeŞubeMüdürüSMSYetki +Acilizmir</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>209</td>
+                                    <td>AdbisBilgileriYonetimPaneli</td>
+                                    <td>Adbis Ekranlarında Yönetimsel</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>208</td>
+                                    <td>AcilIzmirPanel</td>
+                                    <td>Acil izmir yönetim paneli yetkisi</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>207</td>
+                                    <td>DijitalKitapAdmin</td>
+                                    <td>Dijital Kitaplık Uygulamasına Veri Girişi yapabilir</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>206</td>
+                                    <td>OzelGunlerYonetim</td>
+                                    <td>OzelGunlerYonetim</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>205</td>
+                                    <td>KampanyaYonetim</td>
+                                    <td>Kampanyaların Yönetim Ekranı</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>204</td>
+                                    <td>TestYetkisi</td>
+                                    <td>Yeni intranet yetki kontrolü test</td>
+                                    <td></td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="button-container" style="display: flex;margin-top: 1%;margin-bottom: 1%;">
+                <button class="detayonayla-btn" style="margin-right: 1%;">Yeni Yetki</button>
+                <button class="detayonayla-btn" style="margin-right: 1%;">Yetkiyi Kullanıcıya Ekle</button>
+                <button class="detayonayla-btn" style="margin-right: 1%;">Yetkiyi Gruba Ekle</button>
+              </div>
+              <!--
+                <div class="filter-options">
+                    <input type="checkbox" id="aktif" name="aktif">
+                    <label for="aktif">Aktif</label>
+                    <input type="checkbox" id="erisim" name="erisim">
+                    <label for="erisim">Erişim</label>
+                    <label for="baslangic_tarihi">Başlangıç Tarihi</label>
+                    <input type="date" id="baslangic_tarihi" name="baslangic_tarihi">
+                    <label for="bitis_tarihi">Bitiş Tarihi</label>
+                    <input type="date" id="bitis_tarihi" name="bitis_tarihi">
+                    <label for="aciklama">Açıklama</label>
+                    <input type="text" id="aciklama" name="aciklama">
+                </div>
+                -->
+            
+        </div>
+    </div>
+</div>
+
+<div class="detaymodali" id="tumkullanici">
+  <div class="detaymodali-content">
+      <div class="icerikcolumn">
+          <div class="modalbasligi">
+              <p>Kullanıcı Tüm Yetkiler</p>
+              <span class="close" onclick="tumkullanicicloseModal()">
+                  &times;
+              </span>
+          </div>
+
+          <div class="row-container">
+              <div class="modalaltbasligi">
+                  <div class="table-containernew">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>No</th>
+                                  <th>Ad</th>
+                                  <th>Soyad</th>
+                                  <th>Kullanıcı Adı</th>
+                                  <th>E-Posta</th>
+                                  <th>Tel No</th>
+                              </tr>
+                              <tr>
+                                  <th><input type="text" id="filterNo" placeholder=""></th>
+                                  <th><input type="text" id="filterAd" placeholder=""></th>
+                                  <th><input type="text" id="filterSoyad" placeholder=""></th>
+                                  <th><input type="text" id="filterKullaniciAdi" placeholder=""></th>
+                                  <th><input type="text" id="filterEmail" placeholder=""></th>
+                                  <th><input type="text" id="filterTelNo" placeholder=""></th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td><a href="#">Detay</a></td>
+                                  <td>6649</td>
+                                  <td></td>
+                                  <td>18788807322</td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td><a href="#">Detay</a></td>
+                                  <td>6710</td>
+                                  <td></td>
+                                  <td>32011903728</td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td><a href="#">Detay</a></td>
+                                  <td>7781</td>
+                                  <td></td>
+                                  <td>a.coskun</td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td><a href="#">Detay</a></td>
+                                  <td>2899</td>
+                                  <td>Abbas</td>
+                                  <td>abbas_kaleli</td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td><a href="#">Detay</a></td>
+                                  <td>1346</td>
+                                  <td>Abbas</td>
+                                  <td>SARI</td>
+                                  <td>abbas_sari</td>
+                                  <td>abbassari@izmir.bel.tr</td>
+                              </tr>
+                              <!-- Add more rows as needed -->
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+
+  
+      </div>
+  </div>
+</div>
+<div class="detaymodali" id="tumview">
+  <div class="detaymodali-content">
+      <div class="icerikcolumn" >
+          <div class="modalbasligi">
+              <p>Tüm View</p>
+              <span class="close" onclick="tumviewcloseModal()">
+                  &times;
+              </span>
+          </div>
+
+          <div class="row-container">
+              <div class="modalaltbasligi">
+                  <div class="table-containernew">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>YETKI_ID</th>
+                                  <th>YETKI_ADI</th>
+                                  <th>YETKI_ACIKLAMA</th>
+                                  <th>KULLANICI_ID</th>
+                                  <th>AD</th>
+                                  <th>SOYAD</th>
+                                  <th>KULLANICI_ADI</th>
+                                  <th>CEP_TELEFONU</th>
+                                  <th>AKTIF</th>
+                                  <th>BASLANGIC_TARIHI</th>
+                                  <th>BITIS_TARIHI</th>
+                                  <th>GRUP_ADI</th>
+                                  <th>GRUP_ID</th>
+                                  <th>GRUP_ROOT_ID</th>
+                                  <th>ERISIM</th>
+                                  <th>TC_NO</th>
+                                  <th>BIRIM_ID</th>
+                                  <th>ADL_SOYADI</th>
+                              </tr>
+                              <tr>
+                                  <th><input type="text" id="filterYETKI_ID" placeholder=""></th>
+                                  <th><input type="text" id="filterYETKI_ADI" placeholder=""></th>
+                                  <th><input type="text" id="filterYETKI_ACIKLAMA" placeholder=""></th>
+                                  <th><input type="text" id="filterKULLANICI_ID" placeholder=""></th>
+                                  <th><input type="text" id="filterAD" placeholder=""></th>
+                                  <th><input type="text" id="filterSOYAD" placeholder=""></th>
+                                  <th><input type="text" id="filterKULLANICI_ADI" placeholder=""></th>
+                                  <th><input type="text" id="filterCEP_TELEFONU" placeholder=""></th>
+                                  <th><input type="text" id="filterAKTIF" placeholder=""></th>
+                                  <th><input type="text" id="filterBASLANGIC_TARIHI" placeholder=""></th>
+                                  <th><input type="text" id="filterBITIS_TARIHI" placeholder=""></th>
+                                  <th><input type="text" id="filterGRUP_ADI" placeholder=""></th>
+                                  <th><input type="text" id="filterGRUP_ID" placeholder=""></th>
+                                  <th><input type="text" id="filterGRUP_ROOT_ID" placeholder=""></th>
+                                  <th><input type="text" id="filterERISIM" placeholder=""></th>
+                                  <th><input type="text" id="filterTC_NO" placeholder=""></th>
+                                  <th><input type="text" id="filterBIRIM_ID" placeholder=""></th>
+                                  <th><input type="text" id="filterADL_SOYADI" placeholder=""></th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>34</td>
+                                  <td>TelsizRehberi</td>
+                                  <td>TelsizRehberi sayfası</td>
+                                  <td>206</td>
+                                  <td>İbrahim</td>
+                                  <td>KARAHAN</td>
+                                  <td>ikarahan</td>
+                                  <td>5315256997</td>
+                                  <td>1</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Santral Servisi</td>
+                                  <td>38</td>
+                                  <td>38</td>
+                                  <td>1</td>
+                                  <td>21766708580</td>
+                                  <td>3986</td>
+                                  <td>İbrahim KARAHAN</td>
+                              </tr>
+                              <tr>
+                                  <td>60</td>
+                                  <td>TelRehberYonetim</td>
+                                  <td>Telefon rehber yönetim sayfası yetkisi</td>
+                                  <td>206</td>
+                                  <td>İbrahim</td>
+                                  <td>KARAHAN</td>
+                                  <td>ikarahan</td>
+                                  <td>5315256997</td>
+                                  <td>1</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Santral Servisi</td>
+                                  <td>38</td>
+                                  <td>38</td>
+                                  <td>1</td>
+                                  <td>21766708580</td>
+                                  <td>3986</td>
+                                  <td>İbrahim KARAHAN</td>
+                              </tr>
+                              <!-- Add more rows as needed -->
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+
+       
+      </div>
+  </div>
+</div>
+
+
+      <script>
+            function toggleForm(button) {
+                        var currentRow = button.parentNode.parentNode;
+                        
+                  
+                        var belge = currentRow.children[1].textContent;
+                        var birim = currentRow.children[2].textContent;
+                        var tip = currentRow.children[3].textContent;
+                        var olusturmaSil = currentRow.children[4].textContent;
+                        
+               
+                        var nextRow = currentRow.nextElementSibling;
+                        if (nextRow && nextRow.classList.contains('form-row')) {
+                       
+                            nextRow.parentNode.removeChild(nextRow);
+                        } else {
+                           
+                            var allFormRows = document.querySelectorAll('.form-row');
+                            allFormRows.forEach(function(row) {
+                                row.parentNode.removeChild(row);
+                            });
+                
+                          
+                            var formRow = document.createElement('tr');
+                            formRow.classList.add('form-row');
+                
+                            formRow.innerHTML = `
+                                <td colspan="6">
+                                    <form id="editForm">
+                                      <div style="display:flex;flex-direction:column">
+                                        <label for="belge">Belge:</label>
+                                        <input type="text" id="belge" name="belge" value="${belge}">
+                                        <label for="birim">Birim:</label>
+                                        <input type="text" id="birim" name="birim" value="${birim}">
+                                        <label for="tip">Tip:</label>
+                                        <input type="text" id="tip" name="tip" value="${tip}">
+                                        <label for="olusturmaSil">Oluşturma Sil:</label>
+                                        <input type="text" id="olusturmaSil" name="olusturmaSil" value="${olusturmaSil}">
+                                        <div style="display:flex;">
+                                        <button class="detail-btn" type="button" onclick="submitForm()">Kaydet</button>
+                                        <button class="detailnew-btn" type="button" onclick="cancelForm(this)">İptal</button>
+                                        </div>
+                                    </form>
+                                </td>
+                            `;
+                
+                         
+                            currentRow.parentNode.insertBefore(formRow, currentRow.nextSibling);
+                        }
+                    }
+                    function yetkiduzenleme(button) {
+                        var currentRow = button.parentNode.parentNode;
+                        
+                  
+                        var belge = currentRow.children[1].textContent;
+                        var birim = currentRow.children[2].textContent;
+                        var tip = currentRow.children[3].textContent;
+                        var olusturmaSil = currentRow.children[4].textContent;
+                        
+               
+                        var nextRow = currentRow.nextElementSibling;
+                        if (nextRow && nextRow.classList.contains('form-row')) {
+                       
+                            nextRow.parentNode.removeChild(nextRow);
+                        } else {
+                           
+                            var allFormRows = document.querySelectorAll('.form-row');
+                            allFormRows.forEach(function(row) {
+                                row.parentNode.removeChild(row);
+                            });
+                
+                          
+                            var formRow = document.createElement('tr');
+                            formRow.classList.add('form-row');
+                
+                            formRow.innerHTML = `
+                                <td colspan="6">
+                                    <form id="editForm">
+                                      <div style="display:flex;flex-direction:column">
+                                        <label for="belge">Belge:</label>
+                                        <input type="text" id="belge" name="belge" value="${belge}">
+                                        <label for="birim">Birim:</label>
+                                        <input type="text" id="birim" name="birim" value="${birim}">
+                                        <label for="tip">Tip:</label>
+                                        <input type="text" id="tip" name="tip" value="${tip}">
+                                        <label for="olusturmaSil">Oluşturma Sil:</label>
+                                        <input type="text" id="olusturmaSil" name="olusturmaSil" value="${olusturmaSil}">
+                                        <div style="display:flex;">
+                                        <button class="detail-btn" type="button" onclick="submitForm()">Kaydet</button>
+                                        <button class="detailnew-btn" type="button" onclick="cancelForm(this)">İptal</button>
+                                        </div>
+                                    </form>
+                                </td>
+                            `;
+                
+                         
+                            currentRow.parentNode.insertBefore(formRow, currentRow.nextSibling);
+                        }
+                    }
+                
+      </script>
 
     <script src="/styles/script.js"></script>
 </body>

@@ -47,6 +47,34 @@ function duzenleopenModal() {
 function duzenlecloseModal() {
     document.getElementById("modalduzenle").style.display = "none";
 }
+function yetkileropenModal() {
+    document.getElementById("yenimyModal").style.display = "block";
+}
+
+function yetkilercloseModal() {
+    document.getElementById("yenimyModal").style.display = "none";
+}
+function groupopenModal() {
+    document.getElementById("groupmyModal").style.display = "block";
+}
+
+function groupcloseModal() {
+    document.getElementById("groupmyModal").style.display = "none";
+}
+function tumkullaniciopenModal() {
+    document.getElementById("tumkullanici").style.display = "block";
+}
+
+function tumkullanicicloseModal() {
+    document.getElementById("tumkullanici").style.display = "none";
+}
+function tumviewopenModal() {
+    document.getElementById("tumview").style.display = "block";
+}
+
+function tumviewcloseModal() {
+    document.getElementById("tumview").style.display = "none";
+}
 document.getElementById('uploadButton').addEventListener('click', function() {
     document.getElementById('fileInput').click();
 });

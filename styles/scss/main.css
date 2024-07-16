@@ -760,8 +760,9 @@ span.newtoggle {
   background: #23cf51;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
+  margin-top: 1%;
 }
 
 .form-btn {
