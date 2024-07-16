@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Envaneri</title>
+    <link rel="stylesheet" href="/styles/scss/main.css">
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+</head>
+<body>
+    <div class="yeni">     <header class="header">
+        <div class="title">
+         
+            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ara">
+            <button><img src="images/logout.svg" alt="Search"></button>
+        </div></div>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/worker1.svg" alt="Profile Picture">
+                <h3>Fırat ÖZKAN</h3>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><img src="images/envantersiyah.svg"><p>Envanter</p></a></li>
+                    <li class="active"><a href="#"><img src="images/yetkilendirme.svg"><p>Yetkilendirme</p></a></li>
+                    <li><a href="#"><img src="images/key.svg"><p>Lisans Anahtarı Üret</p></a></li>
+                    <li><a href="#"><img src="images/lisansyetkileri.svg"><p>Lisans Yetkileri</p></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+       
+          <h3 style="color:rgba(40, 152, 236, 1)"><img  src="/images/mavibox.svg"> Envanteri</h3>
+          <h4 style="margin-left: 2%;color:rgba(40, 152, 236, 1)">Proje - Controller - Metot</h4>
+          <button class="detailekle-btn" onclick="openModal()" style="margin-left: 2%">Yeni Ekle</button>
+          <button class="detailekle-btn" style="margin-left: 1%"><a style="color: white;text-decoration: none;" href="yeniekle.html">Yeni Sayfada Ekle</a></button>
+            <section class="content">
+             
+                <div class="tablenew" id="data-table">
+                   
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Grup Adı</th>
+                                <th>Açıklama</th>
+                                <th>Grup No</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Example row for the tree view structure -->
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="checkbox1">
+                                    <label for="checkbox1">Adres Numaralama</label>
+                                </td>
+                                <td>Bilgi işlem daire başkanlığına bağlı birim</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="checkbox2">
+                                    <label for="checkbox2">Bilgi Ağları Grubu</label>
+                                </td>
+                                <td>Bilgi işlem Dairesi Başkanlığına bağlı birim</td>
+                                <td>35</td>
+                            </tr>
+                            <!-- Add additional rows as necessary -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+ 
+
+    <script src="/styles/script.js"></script>
+</body>
+</html>

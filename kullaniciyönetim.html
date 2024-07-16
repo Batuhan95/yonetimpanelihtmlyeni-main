@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Envaneri</title>
+    <link rel="stylesheet" href="/styles/scss/main.css">
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+</head>
+<body>
+    <div class="yeni">     <header class="header">
+        <div class="title">
+         
+            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ara">
+            <button><img src="images/logout.svg" alt="Search"></button>
+        </div></div>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/worker1.svg" alt="Profile Picture">
+                <h3>Fırat ÖZKAN</h3>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><img src="images/envantersiyah.svg"><p>Envanter</p></a></li>
+                    <li class="active"><a href="#"><img src="images/yetkilendirme.svg"><p>Yetkilendirme</p></a></li>
+                    <li><a href="#"><img src="images/key.svg"><p>Lisans Anahtarı Üret</p></a></li>
+                    <li><a href="#"><img src="images/lisansyetkileri.svg"><p>Lisans Yetkileri</p></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+       
+          <h3 style="color:rgba(40, 152, 236, 1)"><img  src="/images/mavibox.svg"> Envanteri</h3>
+          <h4 style="margin-left: 2%;color:rgba(40, 152, 236, 1)">Proje - Controller - Metot</h4>
+          <button class="detailekle-btn" onclick="openModal()" style="margin-left: 2%">Yeni Ekle</button>
+          <button class="detailekle-btn" style="margin-left: 1%"><a style="color: white;text-decoration: none;" href="yeniekle.html">Yeni Sayfada Ekle</a></button>
+            <section class="content">
+             
+                <div class="tablenew" id="data-table">
+                   
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Id</th>
+                                <th>Kurum Adı</th>
+                                <th>Kullanıcı Adı</th>
+                                <th>Active Dir</th>
+                                <th>Aktif/Pasif</th>
+                                <th>KayitTarihi</th>
+                                <th>Detay</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="expandable">
+                                <td>></td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>innosa.wapi.usr</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>24.03.2024</td>
+                                <td></td>
+                            </tr>
+                          
+                            <tr class="expandable">
+                                <td>></td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>yazilim.wapi.usr</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>24.03.2024</td>
+                                <td></td>
+                            </tr>
+                            <tr class="expandable">
+                                <td>></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>ıztek.wapi.usr</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>24.03.2024</td>
+                                <td></td>
+                            </tr>
+                            <tr class="expandable">
+                                <td>></td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>eshot.wapi.usr</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>12.06.2024</td>
+                                <td></td>
+                            </tr>
+                            <tr class="expandable">
+                                <td>></td>
+                                <td>5</td>
+                                <td>1</td>
+                                <td>onder_aycan</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>11.07.2024</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modalbasligi">
+                <p>Proje Detayları</p>
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+        </div>
+            <form class="bform">
+                <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="license-key">Lisans Anahtarı</label>
+                <input type="text" id="license-key" name="license-key" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <button class="form-btn" onclick="openModal()">Kaydet</button>
+                                  
+                <button class="formvazgec-btn" onclick="openModal()">Vazgeç</button>
+            </div>
+          
+            </form>
+        </div>
+    </div>
+    <div id="modaltable" class="modal">
+        <div class="modal-content">
+            <div class="modalbasligi">
+                <p>Proje Detayları</p>
+            <span class="close" onclick="yoneticicloseModal()">&times;</span>
+            
+        </div>
+        <input type="text" placeholder="Filter..." style="width: 80%; padding: 8px;margin-left: 5%;
+       
+        margin-top: 3%;
+        margin-bottom: 3%;">
+        <table>
+            <tbody>
+                <tr class="nested-list-item">
+                    <td><input type="checkbox"> InnosaWAPI</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> DisServislerWAPI</td>
+                </tr>
+                <tr class="nested-list-item">
+                    <td>
+                        <input type="checkbox"> TeknomartWAPIController
+                        <ul style="list-style-type:none; padding-left: 20px;">
+                            <li><input type="checkbox"> GetContactListGroups</li>
+                            <li><input type="checkbox"> SmsCreate</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="nested-list-item">
+                    <td><input type="checkbox"> PakoWAPIController</td>
+                </tr>
+                <tr class="nested-list-item">
+                    <td><input type="checkbox"> InnosaWaHimWAPIController</td>
+                </tr>
+                <tr class="nested-list-item">
+                    <td><input type="checkbox"> ExWAPIController</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <script src="/styles/script.js"></script>
+</body>
+</html>

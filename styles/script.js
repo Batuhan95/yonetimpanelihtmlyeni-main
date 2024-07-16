@@ -75,45 +75,64 @@ function tumviewopenModal() {
 function tumviewcloseModal() {
     document.getElementById("tumview").style.display = "none";
 }
-document.getElementById('uploadButton').addEventListener('click', function() {
-    document.getElementById('fileInput').click();
-});
+function yoneticiopenModal() {
+    document.getElementById("modaltable").style.display = "block";
+}
 
-document.getElementById('fileInput').addEventListener('change', function() {
-    const preview = document.getElementById('filePreview');
-    preview.innerHTML = ''; // Önceki önizlemeleri temizle
-    const files = this.files;
+function yoneticicloseModal() {
+    document.getElementById("modaltable").style.display = "none";
+}
 
-    for (let i = 0; i < files.length; i++) {
-        const file = files[i];
-        const div = document.createElement('div');
-        const fileName = document.createElement('span');
-        const button = document.createElement('button');
-
-        fileName.className = 'file-name';
-        fileName.textContent = file.name;
-        button.textContent = 'X';
-        button.onclick = function() {
-            div.remove();
-        };
-
-        div.appendChild(fileName);
-        div.appendChild(button);
-
-        if (file.type.startsWith('image/')) {
-            const img = document.createElement('img');
-            const reader = new FileReader();
-
-            reader.onload = function(e) {
-                img.src = e.target.result;
-                div.insertBefore(img, fileName);
-            }
-
-            reader.readAsDataURL(file);
+document.querySelectorAll('.expandable').forEach(row => {
+    row.addEventListener('click', () => {
+        const nextRow = row.nextElementSibling;
+        if (nextRow && nextRow.classList.contains('hidden-row')) {
+            nextRow.remove();
         } else {
-            fileName.style.marginTop = '20px';
+            const newRow = document.createElement('tr');
+            newRow.classList.add('hidden-row');
+            newRow.innerHTML = `
+                <td colspan="8">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lisans Id</th>
+                                <th>Lisans Anahtarı</th>
+                                <th>KullanıcıId</th>
+                                <th>Açıklaması</th>
+                                <th>Yetki Ekle/Düzenle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>17</td>
+                                <td>JQEMDx8X37nVndmZqNCyw==</td>
+                                <td>1</td>
+                                <td>Yazılım Şube Müdürlüğü - Bildirim servisi için kullanılmaktadır. Proje seviyesinde yetkilidir.</td>
+                                <td><button onclick="yoneticiopenModal()">Yetki Düzenle</button></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </td>
+            `;
+            row.parentNode.insertBefore(newRow, row.nextSibling);
         }
-
-        preview.appendChild(div);
-    }
+    });
+});
+document.querySelectorAll('.nested-list-item').forEach(item => {
+    item.addEventListener('click', (event) => {
+        if (!item.querySelector('.nested-list')) {
+            const nestedList = document.createElement('ul');
+            nestedList.classList.add('nested-list');
+            nestedList.innerHTML = `
+                <li><input type="checkbox"> GetContactListGroups</li>
+                <li><input type="checkbox"> SmsCreate</li>
+            `;
+            item.appendChild(nestedList);
+        } else {
+            item.querySelector('.nested-list').remove();
+        }
+        event.stopPropagation();
+    });
 });

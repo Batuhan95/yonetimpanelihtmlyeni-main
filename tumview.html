@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Envaneri</title>
+    <link rel="stylesheet" href="/styles/scss/main.css">
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+</head>
+<body>
+    <div class="yeni">     <header class="header">
+        <div class="title">
+         
+            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ara">
+            <button><img src="images/logout.svg" alt="Search"></button>
+        </div></div>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/worker1.svg" alt="Profile Picture">
+                <h3>Fırat ÖZKAN</h3>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><img src="images/envantersiyah.svg"><p>Envanter</p></a></li>
+                    <li class="active"><a href="#"><img src="images/yetkilendirme.svg"><p>Yetkilendirme</p></a></li>
+                    <li><a href="#"><img src="images/key.svg"><p>Lisans Anahtarı Üret</p></a></li>
+                    <li><a href="#"><img src="images/lisansyetkileri.svg"><p>Lisans Yetkileri</p></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+       
+          <h3 style="color:rgba(40, 152, 236, 1)"><img  src="/images/mavibox.svg"> Envanteri</h3>
+          <h4 style="margin-left: 2%;color:rgba(40, 152, 236, 1)">Proje - Controller - Metot</h4>
+          <button class="detailekle-btn" onclick="openModal()" style="margin-left: 2%">Yeni Ekle</button>
+          <button class="detailekle-btn" style="margin-left: 1%"><a style="color: white;text-decoration: none;" href="yeniekle.html">Yeni Sayfada Ekle</a></button>
+            <section class="content">
+             
+                <div class="tablenew" id="data-table">
+                   
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>YETKI_ID</th>
+                                <th>YETKI_ADI</th>
+                                <th>YETKI_ACIKLAMA</th>
+                                <th>KULLANICI_ID</th>
+                                <th>AD</th>
+                                <th>SOYAD</th>
+                                <th>KULLANICI_ADI</th>
+                                <th>CEP_TELEFONU</th>
+                                <th>AKTIF</th>
+                                <th>BASLANGIC_TARIHI</th>
+                                <th>BITIS_TARIHI</th>
+                                <th>GRUP_ADI</th>
+                                <th>GRUP_ID</th>
+                                <th>GRUP_ROOT_ID</th>
+                                <th>ERISIM</th>
+                                <th>TC_NO</th>
+                                <th>BIRIM_ID</th>
+                                <th>ADL_SOYADI</th>
+                            </tr>
+                            <tr>
+                                <th><input type="text" id="filterYETKI_ID" placeholder=""></th>
+                                <th><input type="text" id="filterYETKI_ADI" placeholder=""></th>
+                                <th><input type="text" id="filterYETKI_ACIKLAMA" placeholder=""></th>
+                                <th><input type="text" id="filterKULLANICI_ID" placeholder=""></th>
+                                <th><input type="text" id="filterAD" placeholder=""></th>
+                                <th><input type="text" id="filterSOYAD" placeholder=""></th>
+                                <th><input type="text" id="filterKULLANICI_ADI" placeholder=""></th>
+                                <th><input type="text" id="filterCEP_TELEFONU" placeholder=""></th>
+                                <th><input type="text" id="filterAKTIF" placeholder=""></th>
+                                <th><input type="text" id="filterBASLANGIC_TARIHI" placeholder=""></th>
+                                <th><input type="text" id="filterBITIS_TARIHI" placeholder=""></th>
+                                <th><input type="text" id="filterGRUP_ADI" placeholder=""></th>
+                                <th><input type="text" id="filterGRUP_ID" placeholder=""></th>
+                                <th><input type="text" id="filterGRUP_ROOT_ID" placeholder=""></th>
+                                <th><input type="text" id="filterERISIM" placeholder=""></th>
+                                <th><input type="text" id="filterTC_NO" placeholder=""></th>
+                                <th><input type="text" id="filterBIRIM_ID" placeholder=""></th>
+                                <th><input type="text" id="filterADL_SOYADI" placeholder=""></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>34</td>
+                                <td>TelsizRehberi</td>
+                                <td>TelsizRehberi sayfası</td>
+                                <td>206</td>
+                                <td>İbrahim</td>
+                                <td>KARAHAN</td>
+                                <td>ikarahan</td>
+                                <td>5315256997</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td>Santral Servisi</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>1</td>
+                                <td>21766708580</td>
+                                <td>3986</td>
+                                <td>İbrahim KARAHAN</td>
+                            </tr>
+                            <tr>
+                                <td>60</td>
+                                <td>TelRehberYonetim</td>
+                                <td>Telefon rehber yönetim sayfası yetkisi</td>
+                                <td>206</td>
+                                <td>İbrahim</td>
+                                <td>KARAHAN</td>
+                                <td>ikarahan</td>
+                                <td>5315256997</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td>Santral Servisi</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>1</td>
+                                <td>21766708580</td>
+                                <td>3986</td>
+                                <td>İbrahim KARAHAN</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+ 
+
+    <script src="/styles/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Envaneri</title>
+    <link rel="stylesheet" href="/styles/scss/main.css">
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+</head>
+<body>
+    <div class="yeni">     <header class="header">
+        <div class="title">
+         
+            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ara">
+            <button><img src="images/logout.svg" alt="Search"></button>
+        </div></div>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/worker1.svg" alt="Profile Picture">
+                <h3>Fırat ÖZKAN</h3>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><img src="images/envantersiyah.svg"><p>Envanter</p></a></li>
+                    <li class="active"><a href="#"><img src="images/yetkilendirme.svg"><p>Yetkilendirme</p></a></li>
+                    <li><a href="#"><img src="images/key.svg"><p>Lisans Anahtarı Üret</p></a></li>
+                    <li><a href="#"><img src="images/lisansyetkileri.svg"><p>Lisans Yetkileri</p></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+       
+          <h3 style="color:rgba(40, 152, 236, 1)"><img  src="/images/mavibox.svg"> Envanteri</h3>
+          <h4 style="margin-left: 2%;color:rgba(40, 152, 236, 1)">Proje - Controller - Metot</h4>
+          <button class="detailekle-btn" onclick="openModal()" style="margin-left: 2%">Yeni Ekle</button>
+          <button class="detailekle-btn" style="margin-left: 1%"><a style="color: white;text-decoration: none;" href="yeniekle.html">Yeni Sayfada Ekle</a></button>
+            <section class="content">
+             
+                <div class="tablenew" id="data-table">
+                   
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>No</th>
+                                <th>Ad</th>
+                                <th>Soyad</th>
+                                <th>Kullanıcı Adı</th>
+                                <th>E-Posta</th>
+                                <th>Tel No</th>
+                            </tr>
+                        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td><input type="text" id="filterNo" placeholder=""></td>
+                                <td><input type="text" id="filterAd" placeholder=""></td>
+                                <td><input type="text" id="filterSoyad" placeholder=""></td>
+                                <td><input type="text" id="filterKullaniciAdi" placeholder=""></td>
+                                <td><input type="text" id="filterEmail" placeholder=""></td>
+                                <td><input type="text" id="filterTelNo" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>  <button class="detail-btn" onClick="newopenModal()">
+                          Detay
+                        </button></td>
+                                <td>6649</td>
+                                <td></td>
+                                <td>18788807322</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>  <button class="detail-btn" onClick="newopenModal()">
+                          Detay
+                        </button></td>
+                                <td>6710</td>
+                                <td></td>
+                                <td>32011903728</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>  <button class="detail-btn" onClick="newopenModal()">
+                          Detay
+                        </button></td>
+                                <td>7781</td>
+                                <td></td>
+                                <td>a.coskun</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>  <button class="detail-btn" onClick="newopenModal()">
+                          Detay
+                        </button></td>
+                                <td>2899</td>
+                                <td>Abbas</td>
+                                <td>abbas_kaleli</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>  <button class="detail-btn" onClick="newopenModal()">
+                          Detay
+                        </button></td>
+                                <td>1346</td>
+                                <td>Abbas</td>
+                                <td>SARI</td>
+                                <td>abbas_sari</td>
+                                <td>abbassari@izmir.bel.tr</td>
+                                <td></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="detaymodali" id="newmyModal">
+    
+        <div class="detaymodali-content">
+          <div class="icerikcolumn" style="padding: 1%;">
+    
+  
+  
+          <div class="modalaltbasligi">
+      <p>Kullanıcı Detay ve Tüm Yetkileri</p>
+  <div class="table-containernew">
+    <table>
+      <thead>
+        <tr>
+       
+          <th>Yetki No</th>
+          <th>Yetki Adı</th>
+          <th>Aktif</th>
+          <th>Erişim</th>
+          <th>Başlangıç Tarihi</th>
+          <th>Bitiş Tarihi</th>
+          <th>Açıklama</th>
+          <th>Birim Adı</th>
+          
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+      
+          <td>15</td>
+          <td>Personel Yönetimi</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td>01.01.2020</td>
+          <td>01.01.2030</td>
+          <td>deneme</td>
+          <td>açıklama</td>
+        
+        </tr>
+
+      </tbody>
+    </table>
+      </div>
+    
+    </div>
+ 
+    
+        </div>
+      </div>
+      
+      </div>
+ 
+
+    <script src="/styles/script.js"></script>
+</body>
+</html>

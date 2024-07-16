@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Envaneri</title>
+    <link rel="stylesheet" href="/styles/scss/main.css">
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+</head>
+<body>
+    <div class="yeni">     <header class="header">
+        <div class="title">
+         
+            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ara">
+            <button><img src="images/logout.svg" alt="Search"></button>
+        </div></div>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/worker1.svg" alt="Profile Picture">
+                <h3>Fırat ÖZKAN</h3>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><img src="images/envantersiyah.svg"><p>Envanter</p></a></li>
+                    <li class="active"><a href="#"><img src="images/yetkilendirme.svg"><p>Yetkilendirme</p></a></li>
+                    <li><a href="#"><img src="images/key.svg"><p>Lisans Anahtarı Üret</p></a></li>
+                    <li><a href="#"><img src="images/lisansyetkileri.svg"><p>Lisans Yetkileri</p></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+       
+          <h3 style="color:rgba(40, 152, 236, 1)"><img  src="/images/mavibox.svg"> Envanteri</h3>
+          <h4 style="margin-left: 2%;color:rgba(40, 152, 236, 1)">Proje - Controller - Metot</h4>
+          <button class="detailekle-btn" onclick="openModal()" style="margin-left: 2%">Yeni Ekle</button>
+          <button class="detailekle-btn" style="margin-left: 1%"><a style="color: white;text-decoration: none;" href="yeniekle.html">Yeni Sayfada Ekle</a></button>
+            <section class="content">
+             
+                <div class="tablenew" id="data-table">
+                   
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Yetki No</th>
+                                <th>Yetki Adı</th>
+                                <th>Açıklama</th>
+                                <th>Grup Adı</th>
+                            </tr>
+                            <tr>
+                                <th><input type="text" id="filterYetkiNo" placeholder=""></th>
+                                <th><input type="text" id="filterYetkiAdi" placeholder=""></th>
+                                <th><input type="text" id="filterAciklama" placeholder=""></th>
+                                <th><input type="text" id="filterGrupAdi" placeholder=""></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>214</td>
+                                <td>UabYetki</td>
+                                <td>Uab sayfasına giriş yapabilmek için bu yetki gerekli</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>212</td>
+                                <td>ManageEngineBirimSecimi</td>
+                                <td>Manage engine içinde birim seçebilir yetkisi</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>211</td>
+                                <td>AcilIzmirAdbisSmsGonderimi</td>
+                                <td>Acil izmir yönetim paneli içerisinde bulunan Adbis gönderimi</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>210</td>
+                                <td>ItfaiyeSubeMuduruSMSYetki</td>
+                                <td>ItfaiyeŞubeMüdürüSMSYetki +Acilizmir</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>209</td>
+                                <td>AdbisBilgileriYonetimPaneli</td>
+                                <td>Adbis Ekranlarında Yönetimsel</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>208</td>
+                                <td>AcilIzmirPanel</td>
+                                <td>Acil izmir yönetim paneli yetkisi</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>207</td>
+                                <td>DijitalKitapAdmin</td>
+                                <td>Dijital Kitaplık Uygulamasına Veri Girişi yapabilir</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>206</td>
+                                <td>OzelGunlerYonetim</td>
+                                <td>OzelGunlerYonetim</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>205</td>
+                                <td>KampanyaYonetim</td>
+                                <td>Kampanyaların Yönetim Ekranı</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>204</td>
+                                <td>TestYetkisi</td>
+                                <td>Yeni intranet yetki kontrolü test</td>
+                                <td></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+ 
+
+    <script src="/styles/script.js"></script>
+</body>
+</html>
