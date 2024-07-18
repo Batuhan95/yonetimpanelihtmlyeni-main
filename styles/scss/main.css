@@ -351,6 +351,94 @@ span.newtoggle {
 .modal-content .yeniform label {
   width: 10%;
 }
+.modal-newcontent {
+  background-color: #fefefe;
+  margin: 5% auto;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  max-height: 700px;
+  overflow-y: auto;
+}
+.modal-newcontent .modalbasligi {
+  display: flex;
+  background-color: rgb(40, 152, 236);
+  width: 100%;
+  color: white;
+}
+.modal-newcontent .modalbasligi p {
+  width: 50%;
+  margin-left: 40%;
+}
+.modal-newcontent .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal-newcontent .close:hover, .modal-newcontent .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-newcontent .bform,
+.modal-newcontent .yeniform {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 10% 5% 10%;
+}
+.modal-newcontent .bform div,
+.modal-newcontent .yeniform div {
+  display: flex;
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 8px;
+}
+.modal-newcontent .bform label,
+.modal-newcontent .yeniform label {
+  margin-top: 10px;
+  margin-right: 10px;
+  color: rgb(40, 152, 236);
+  width: 30%;
+}
+.modal-newcontent .bform input,
+.modal-newcontent .bform input[type=submit],
+.modal-newcontent .yeniform input,
+.modal-newcontent .yeniform input[type=submit] {
+  padding: 5px;
+  margin-top: 5px;
+  border-color: rgba(40, 152, 236, 0.4);
+  border-radius: 10px;
+}
+.modal-newcontent .bform input[type=submit],
+.modal-newcontent .yeniform input[type=submit] {
+  background-color: rgb(40, 152, 236);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-newcontent .bform input[type=submit]:hover,
+.modal-newcontent .yeniform input[type=submit]:hover {
+  background-color: #0056b3;
+}
+.modal-newcontent .bform div {
+  display: flex;
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 8px;
+}
+.modal-newcontent .bform label {
+  width: 30%;
+}
+.modal-newcontent .yeniform div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal-newcontent .yeniform label {
+  width: 10%;
+}
 
 .eklemeform {
   display: flex;

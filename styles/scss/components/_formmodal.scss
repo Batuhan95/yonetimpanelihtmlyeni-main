@@ -129,6 +129,107 @@ $file-name-margin-top: 5px;
         }
       }
     }
+    &-newcontent {
+      background-color: #fefefe;
+      margin: 5% auto;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+      max-height: 700px;
+      overflow-y: auto;
+  
+      .modalbasligi {
+        display: flex;
+        background-color: rgba(40, 152, 236, 1);
+        width: 100%;
+        color: white;
+  
+        p {
+          width: 50%;
+          margin-left: 40%;
+        }
+      }
+  
+      .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+  
+        &:hover,
+        &:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+  
+      .bform,
+      .yeniform {
+        display: flex;
+        flex-direction: column;
+        padding: 1% 10% 5% 10%;
+  
+        div {
+          display: flex;
+          margin-left: 10%;
+          width: 80%;
+          margin-top: 8px;
+        }
+  
+        label {
+          margin-top: 10px;
+          margin-right: 10px;
+          color: rgba(40, 152, 236, 1);
+          width: 30%;
+        }
+  
+        input,
+        input[type="submit"] {
+          padding: 5px;
+          margin-top: 5px;
+          border-color: rgba(40, 152, 236, 0.4);
+          border-radius: 10px;
+        }
+  
+        input[type="submit"] {
+          background-color: rgba(40, 152, 236, 1);
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+  
+      .bform {
+        div {
+          display: flex;
+          margin-left: 10%;
+          width: 80%;
+          margin-top: 8px;
+        }
+  
+        label {
+          width: 30%;
+        }
+      }
+  
+      .yeniform {
+        div {
+          display: flex;
+          flex-wrap: wrap;
+        }
+  
+        label {
+          width: 10%;
+        }
+      }
+    }
   }
   .eklemeform{
     display: flex;
