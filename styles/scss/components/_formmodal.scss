@@ -136,8 +136,7 @@ $file-name-margin-top: 5px;
       width: 80%;
       max-width: 800px;
       border-radius: 10px;
-      max-height: 700px;
-      overflow-y: auto;
+     
   
       .modalbasligi {
         display: flex;
@@ -150,7 +149,11 @@ $file-name-margin-top: 5px;
           margin-left: 40%;
         }
       }
-  
+      .divicerigi{        
+        max-height: 700px;
+        overflow-y: auto;
+      }
+   
       .close {
         color: white;
         float: right;

@@ -358,8 +358,6 @@ span.newtoggle {
   width: 80%;
   max-width: 800px;
   border-radius: 10px;
-  max-height: 700px;
-  overflow-y: auto;
 }
 .modal-newcontent .modalbasligi {
   display: flex;
@@ -370,6 +368,10 @@ span.newtoggle {
 .modal-newcontent .modalbasligi p {
   width: 50%;
   margin-left: 40%;
+}
+.modal-newcontent .divicerigi {
+  max-height: 700px;
+  overflow-y: auto;
 }
 .modal-newcontent .close {
   color: white;
