@@ -288,6 +288,8 @@ span.newtoggle {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 .modal-content .close:hover, .modal-content .close:focus {
   color: black;
@@ -378,6 +380,8 @@ span.newtoggle {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 .modal-newcontent .close:hover, .modal-newcontent .close:focus {
   color: black;
@@ -703,6 +707,8 @@ span.newtoggle {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 .duzenlememodali-content .close:hover, .duzenlememodali-content .close:focus {
   color: black;
@@ -823,6 +829,8 @@ span.newtoggle {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 .detaymodali-content .close:hover, .detaymodali-content .close:focus {
   color: black;
