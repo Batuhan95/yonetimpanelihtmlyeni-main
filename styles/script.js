@@ -26,6 +26,26 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+function switchTheme() {
+    const themeLink = document.getElementById('theme-link');
+    const currentTheme = themeLink.getAttribute('href');
+    const newTheme = currentTheme === '/styles/scss/main.css' ? '/styles/scss/darkmain.css' : '/styles/scss/main.css';
+    themeLink.setAttribute('href', newTheme);
+
+    const toggleIcons = document.querySelectorAll(".toggle-icon");
+    const logo = document.getElementById('logoimg');
+    const newLogoSrc = currentTheme === '/styles/scss/main.css' ? '/images/yellowcode-circle.svg' : '/images/code-circle.svg';
+    logo.setAttribute('src', newLogoSrc);
+
+    toggleIcons.forEach(function(icon) {
+        if (currentTheme === '/styles/scss/main.css') {
+            icon.src = "/images/yellowadd.svg"; // Karanlık tema için simge
+        } else {
+            icon.src = "/images/add.svg"; // Açık tema için simge
+        }
+    });
+}
+
 function openModal() {
     document.getElementById("myModal").style.display = "block";
 }

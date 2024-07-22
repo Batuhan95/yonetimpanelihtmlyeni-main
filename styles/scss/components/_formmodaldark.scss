@@ -1,0 +1,696 @@
+@import "../abstract/variables";
+@import "../abstract/variables";
+.hidden {
+    display: none;
+  }
+  
+  span.toggle,
+  span.newtoggle {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    font-size: 16px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  
+    &-content {
+      background-color: $modelcontent-color;
+      margin: 15% auto;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+  
+      .modalbasligi {
+        display: flex;
+        background-color: $button-warning-bg;
+        width: 100%;
+        color: $button-primary-color;
+  
+        p {
+          width: 50%;
+          margin-left: 40%;
+        }
+      }
+  
+      .close {
+        color: $button-primary-color;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: auto;
+    margin-right: auto;
+  
+        &:hover,
+        &:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+  
+      .bform,
+      .yeniform {
+        display: flex;
+        flex-direction: column;
+        padding: 1% 10% 5% 10%;
+  
+        div {
+          display: flex;
+          margin-left: 10%;
+          width: 80%;
+          margin-top: 8px;
+        }
+  
+        label {
+          margin-top: 10px;
+          margin-right: 10px;
+          color: $button-warning-bg;
+          width: 30%;
+        }
+  
+        input,
+        input[type="submit"] {
+          padding: 5px;
+          margin-top: 5px;
+          border-color: rgba(40, 152, 236, 0.4);
+          border-radius: 10px;
+        }
+  
+        input[type="submit"] {
+          background-color: $button-warning-bg;
+          color: $button-primary-color;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+  
+      .bform {
+        div {
+          display: flex;
+          margin-left: 10%;
+          width: 80%;
+          margin-top: 8px;
+        }
+  
+        label {
+          width: 30%;
+        }
+      }
+  
+      .yeniform {
+        div {
+          display: flex;
+          flex-wrap: wrap;
+        }
+  
+        label {
+          width: 10%;
+        }
+      }
+    }
+    &-newcontent {
+      background-color: $modelcontent-color;
+      margin: 5% auto;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+     
+  
+      .modalbasligi {
+        display: flex;
+        background-color: $button-warning-bg;
+        width: 100%;
+        color: $button-primary-color;
+  
+        p {
+          width: 50%;
+          margin-left: 40%;
+        }
+      }
+      .divicerigi{        
+        max-height: 700px;
+        overflow-y: auto;
+      }
+   
+      .close {
+        color: $button-primary-color;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: auto;
+    margin-right: auto;
+  
+        &:hover,
+        &:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+  
+      .bform,
+      .yeniform {
+        display: flex;
+        flex-direction: column;
+        padding: 1% 10% 5% 10%;
+  
+        div {
+          display: flex;
+          margin-left: 10%;
+          width: 80%;
+          margin-top: 8px;
+        }
+  
+        label {
+          margin-top: 10px;
+          margin-right: 10px;
+          color: $button-warning-bg;
+          width: 30%;
+        }
+  
+        input,
+        input[type="submit"] {
+          padding: 5px;
+          margin-top: 5px;
+          border-color: rgba(40, 152, 236, 0.4);
+          border-radius: 10px;
+        }
+  
+        input[type="submit"] {
+          background-color: $button-warning-bg;
+          color: $button-primary-color;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+  
+      .bform {
+        div {
+          display: flex;
+          margin-left: 10%;
+          width: 80%;
+          margin-top: 8px;
+        }
+  
+        label {
+          width: 30%;
+        }
+      }
+  
+      .yeniform {
+        div {
+          display: flex;
+          flex-wrap: wrap;
+        }
+  
+        label {
+          width: 10%;
+        }
+      }
+    }
+  }
+  .eklemeform{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 10% 5% 10%;
+
+    div {
+      display: flex;
+      margin-left: 10%;
+      width: 80%;
+      margin-top: 8px;
+      .file-preview {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $file-preview-gap;
+        margin-top: 10px;
+    
+        div {
+            position: relative;
+            display: inline-block;
+            padding: $file-preview-padding;
+            border: $file-preview-border;
+            border-radius: $file-preview-border-radius;
+    
+            img {
+                max-width: 100px;
+                max-height: 100px;
+                display: block;
+                margin-bottom: 5px;
+            }
+    
+            button {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                background: $button-danger-bg;
+                color: $button-primary-color;
+                border: none;
+                border-radius: $uzunluk-50;
+                cursor: pointer;
+            }
+    
+            .file-name {
+                display: block;
+                margin-top: $file-name-margin-top;
+                word-break: break-all;
+            }
+        }
+    }
+    }
+
+    label {
+      margin-top: 10px;
+      margin-right: 10px;
+      color: $button-warning-bg;
+      width: 30%;
+    }
+
+    input,
+    input[type="submit"] {
+      padding: 5px;
+      margin-top: 5px;
+      border-color: rgba(40, 152, 236, 0.4);
+      border-radius: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: $button-warning-bg;
+      color: $button-primary-color;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  .uploadbtn {
+    background: $button-warning-bg;
+    color: $button-primary-color;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .eklemeform {
+    div {
+      display: flex;
+      margin-left: 10%;
+      width: 80%;
+      margin-top: 8px;
+    }
+
+    label {
+      width: 30%;
+    }
+  }
+
+
+  .detail-btn {
+    background: $button-warning-bg;
+    color: $button-primary-color;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .detailnew-btn {
+    background: $button-danger-bg;
+    color: $button-primary-color;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .detailekle-btn {
+    background: green;
+    color: $button-primary-color;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .form-btn {
+    background: $button-warning-bg;
+    color: $button-primary-color;
+    border: none;
+    padding: $uzunluk-3;
+    cursor: pointer;
+    margin-left: $uzunluk-30;
+  }
+  
+  .formvazgec-btn {
+    background: $button-danger-bg;
+    color: $button-primary-color;
+    border: none;
+    padding: $uzunluk-3;
+    cursor: pointer;
+    margin-left: $uzunluk-1;
+  }
+  
+  .eklemeform {
+    width: 100%;
+  }
+  
+  @media (max-width: 900px) {
+
+    .bform {
+        div {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+      width: 80%;
+      margin-top: 8px;
+        }
+  
+        label {
+          min-width: 100%;
+        }
+      }
+   
+  
+    .form-btn {
+      margin-left: 0px!important;
+    }
+  
+    .formvazgec-btn {
+      margin-left: 0px;
+      margin-top: 1%;
+    } 
+  
+
+   
+   
+  }
+
+.duzenlememodali {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &-content {
+      background-color: $modelcontent-color;
+      margin: 10% auto;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      .icerikcolumn{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width:100%;
+      }
+      .row-container {
+        display: flex;
+        flex-direction: row;
+     
+      }
+      .modalbasligi {
+          display: flex;
+          background-color: $button-warning-bg;
+          width: 100%;
+          color: $button-primary-color;
+
+          p {
+              width: 50%;
+              margin-left: 40%;
+          }
+      }
+      .modalaltbasligi {
+        display: flex;
+        flex-direction: column;
+        background-color: $button-primary-color;
+        width: 100%;
+        color: $button-warning-bg;
+  
+        p {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+  
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 10px;
+  
+          th,
+          td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid $border-color-darkwhite;
+          }
+  
+          th {
+            background-color: $button-warning-bg;
+            color: $button-primary-color;
+          }
+        }
+      }
+
+      .user-info {
+          width: 30%;
+          padding: 10px;
+          border-right: 1px solid $border-color-darkwhite;
+          border-bottom: 1px solid $border-color-darkwhite;
+
+          form {
+              display: flex;
+              flex-direction: column;
+
+              label {
+                  margin-top: 10px;
+                  color: $button-warning-bg;
+              }
+
+              input {
+                  padding: 5px;
+                  margin-top: 5px;
+                  border: 1px solid rgba(40, 152, 236, 0.4);
+                  border-radius: 5px;
+              }
+          }
+      }
+
+      .data-list {
+          width: 70%;
+          padding: 10px;
+          overflow-y: auto;
+          border-bottom: 1px solid $border-color-darkwhite;
+
+          ul {
+              list-style-type: none;
+              padding: 0;
+
+              li {
+                  margin: 5px 0;
+                  padding: 10px;
+                  border: 1px solid $border-color-darkwhite;
+                  border-radius: 5px;
+              }
+          }
+      }
+
+      .close {
+          color: $button-primary-color;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          margin-left: auto;
+    margin-right: auto;
+
+          &:hover,
+          &:focus {
+              color: black;
+              text-decoration: none;
+              cursor: pointer;
+          }
+      }
+  }
+}
+.detaymodali {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &-content {
+      background-color: $modelcontent-color;
+      margin: 1% auto;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      .icerikcolumn{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width:100%;
+      }
+      .row-container {
+        display: flex;
+        flex-direction: row;
+     
+      }
+      .modalbasligi {
+          display: flex;
+          background-color: $button-warning-bg;
+          width: 100%;
+          color: $button-primary-color;
+
+          p {
+              width: 50%;
+              margin-left: 40%;
+          }
+      }
+      .modalaltbasligi {
+        display: flex;
+        flex-direction: column;
+        background-color: $button-primary-color;
+        width: 100%;
+        color: $button-warning-bg;
+  
+        p {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .table-containernew {
+          width: 100%;
+          overflow-x: auto;
+        }
+  
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 10px;
+  
+          th,
+          td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid $border-color-darkwhite;
+          }
+  
+          th {
+            background-color: $button-warning-bg;
+            color: $button-primary-color;
+          }
+        }
+      }
+
+      .user-info {
+          width: 30%;
+          padding: 10px;
+          border-right: 1px solid $border-color-darkwhite;
+          border-bottom: 1px solid $border-color-darkwhite;
+
+          form {
+              display: flex;
+              flex-direction: column;
+
+              label {
+                  margin-top: 10px;
+                  color: $button-warning-bg;
+              }
+
+              input {
+                  padding: 5px;
+                  margin-top: 5px;
+                  border: 1px solid rgba(40, 152, 236, 0.4);
+                  border-radius: 5px;
+              }
+          }
+      }
+
+      .data-list {
+          width: 70%;
+          padding: 10px;
+          overflow-y: auto;
+          border-bottom: 1px solid $border-color-darkwhite;
+
+          ul {
+              list-style-type: none;
+              padding: 0;
+
+              li {
+                  margin: 5px 0;
+                  padding: 10px;
+                  border: 1px solid $border-color-darkwhite;
+                  border-radius: 5px;
+              }
+          }
+      }
+
+      .close {
+          color: $button-primary-color;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          margin-left: auto;
+          margin-right: auto;
+          &:hover,
+          &:focus {
+              color: black;
+              text-decoration: none;
+              cursor: pointer;
+          }
+      }
+  }
+}
+
+// Responsive design for the new modal
+@media (max-width: 900px) {
+  .duzenlememodali {
+      &-content {
+          flex-direction: column;
+
+          .user-info,
+          .data-list {
+              width: 100%;
+              padding: 10px;
+              border: none;
+          }
+      }
+  }
+}

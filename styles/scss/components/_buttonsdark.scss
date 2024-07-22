@@ -1,0 +1,108 @@
+@import "../abstract/variables";
+.button {
+    display: inline-block;
+    font-weight: 400;
+    color: $button-primary-color;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: $button-primary-bg;
+    border: $button-border-width solid $button-border-color;
+    padding: $button-padding-y-percent $button-padding-x-percent;
+    font-size: $button-font-size-percent;
+    border-radius: $button-border-radius-percent;
+    transition: $button-transition;
+  
+    &:hover {
+      opacity: $button-hover-opacity;
+    }
+  
+    &:focus {
+      box-shadow: $button-focus-box-shadow;
+    }
+  
+    &:disabled {
+      opacity: $button-disabled-opacity;
+      cursor: $button-disabled-cursor;
+    }
+  }
+  
+  // Different Button Variants
+  .button-primary {
+    background-color: $button-primary-bg;
+    color: $button-secondary-color;
+  }
+
+  .button-secondary {
+    background-color: $button-secondary-bg;
+    color: $button-secondary-color;
+  }
+  
+  .button-success {
+    background-color: $button-success-bg;
+    color: $button-success-color;
+  }
+   
+  .button-danger {
+    background-color: $button-danger-bg;
+    color: $button-danger-color;
+  }
+  
+  .button-warning {
+    background-color: $button-warning-bg;
+    color: $button-warning-color;
+  }
+  
+  .button-info {
+    background-color: $button-info-bg;
+    color: $button-info-color;
+  }
+  
+  .button-light {
+    background-color: $button-light-bg;
+    color: $button-light-color;
+  }
+  
+  .button-dark {
+    background-color: $button-dark-bg;
+    color: $button-dark-color;
+  }
+  .text-primary {
+    color: $button-warning-bg;
+  
+  }
+   
+    .text-secondary {
+        color: $button-secondary-bg;
+      
+      }
+      
+      .text-success {
+        color: $button-success-bg;
+      
+      }
+      
+      .text-danger {
+        color: $button-danger-bg;
+
+      }
+      
+      .text-warning {
+      color: $button-warning-bg;
+       
+      }
+      
+      .text-info {
+       color: $button-info-bg;
+    
+      }
+      
+      .text-light {
+       color: $button-light-bg;
+     
+      }
+      
+      .text-dark {
+        color: $button-dark-bg;
+     
+      }

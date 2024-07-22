@@ -1,0 +1,47 @@
+@import "../abstract/variables";
+.treeview {
+    width: 100%;
+    background-color: $anasayfa-bodydark;
+    box-shadow: 0 0 10px $anasyafa-sidebardark;
+    padding: 20px;
+    margin-bottom: 20px;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        padding: 5px 0;
+        color: $button-warning-bg;
+  
+        ul {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+
+  
+    .treeview {
+      width: 30%;
+      margin-right: 20px;
+      margin-bottom: 0;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+    
+  
+
+  }
+  @media (max-width: 767px) {
+
+  
+    .treeview {
+      width: 100%;
+      margin-right: 20px;
+      margin-bottom: 0;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+  } 

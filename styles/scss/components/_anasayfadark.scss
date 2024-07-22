@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: $anasyafa-body;
+    background-color: $anasyafa-sidebardark;
     min-height: 100vh;
   }
   
@@ -15,7 +15,7 @@ body {
   
   .sidebar {
     width: 100%;
-    background: $anasyafa-sidebar;
+    background: $anasyafa-sidebardark;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: auto;
     display: flex;
@@ -50,12 +50,12 @@ body {
   
           &.active,
           &:hover {
-            background-color: $button-secondary-bg;
+            background-color: $button-warning-bg;
           }
   
           &.active a,
           &:hover a {
-            color: $button-primary-color;
+            color: $anasayfa-bodydark;
           }
   
           a {
@@ -76,25 +76,26 @@ body {
   .main-content {
     flex-grow: 1;
     padding: 20px;
-    background: $button-primary-color;
+    background: $anasayfa-bodydark;
     h3{
-      color: $button-secondary-bg;
-    }
-    h4{
-      color: $button-secondary-bg;
-    }
+        color: $button-warning-bg;
+      }
+      h4{
+        color: $button-warning-bg;
+      }
   }
   
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $button-primary-color;
+    background: $anasayfa-bodydark;
 
   
     .title {
       display: flex;
       align-items: center;
+      color: $button-warning-bg;
   
       img {
         margin-right: 10px;
@@ -151,7 +152,7 @@ body {
     }
   
     .header {
-      padding-bottom: 20px;
+   
   
       .title {
         width: auto;
@@ -182,8 +183,8 @@ body {
     .header {
       .title {
         width: 15%;
-        background: $anasyafa-sidebar;
-        color: $button-secondary-bg;
+        background: $anasyafa-sidebardark;
+        color: $button-warning-bg;
       }
     }
   }

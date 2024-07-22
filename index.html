@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proje Envaneri</title>
-    <link rel="stylesheet" href="/styles/scss/main.css">
+    <link id="theme-link" rel="stylesheet" href="/styles/scss/main.css">
 </head>
 <body>
     <div class="yeni">     <header class="header">
         <div class="title">
          
-            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+            <div><img id="logoimg" src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
         </div>
         <div class="search">
             <input type="text" placeholder="Ara">
             <button><img src="/images/logout.svg" alt="Search"></button>
+            <button type="button" onclick="switchTheme()">Tema Değiştir</button>
         </div></div>
     <div class="container">
         
@@ -34,8 +35,8 @@
         </aside>
         <main class="main-content">
        
-          <h3 style="color:rgba(40, 152, 236, 1)"><img  src="/images/mavibox.svg"> Envanteri</h3>
-          <h4 style="margin-left: 2%;color:rgba(40, 152, 236, 1)">Proje - Controller - Metot</h4>
+          <h3><img  src="/images/mavibox.svg"> Envanteri</h3>
+          <h4 class="ml-2">Proje - Controller - Metot</h4>
             <section class="content">
                 <div class="treeview">
                     <ul>
@@ -64,7 +65,7 @@
                     </ul>
                 </div>
                 <div class="table" id="data-table">
-                    <p onclick="openModal()" style="color: rgba(40, 152, 236, 1);">Detayı Görmek İçin Tıklayınız</p>
+                    <p onclick="openModal()" class="text-primary">Detayı Görmek İçin Tıklayınız</p>
                     <table>
                         <thead>
                             <tr>

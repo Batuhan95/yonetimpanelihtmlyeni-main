@@ -1,0 +1,82 @@
+@import "../abstract/variables";
+.detail-btn {
+  background: $button-warning-bg;
+  color: $button-primary-color;
+  border: none;
+
+  cursor: pointer;
+
+}
+
+.detailnew-btn {
+  background: $button-danger-bg;
+  color: $button-primary-color;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.detailekle-btn {
+  background: $button-success-bg;
+  color: $button-primary-color;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 1%;
+
+}
+
+.form-btn {
+  background: $button-warning-bg;
+  color: $button-primary-color;
+  border: none;
+  cursor: pointer;
+
+}
+
+.formvazgec-btn {
+  background: $button-danger-bg;
+  color: $button-primary-color;
+  border: none;
+
+  cursor: pointer;
+ 
+}
+.formsil-btn {
+  background: $button-danger-bg;
+  color: $button-primary-color;
+  border: none;
+
+  cursor: pointer;
+ 
+
+}
+.detayonayla-btn {
+  background: $button-warning-bg;
+  color: $button-primary-color;
+  border: none;
+  width: 80%;
+  cursor: pointer;
+  min-height: 30px;
+  
+}
+
+.detayvazgec-btn {
+  background: $button-danger-bg;
+  color: $button-primary-color;
+  border: none;
+  width: 80%;
+  cursor: pointer;
+  min-height: 30px;
+  
+}
+@media (max-width: 768px) {
+
+
+  .detail-btn,
+  .detailnew-btn {
+    margin-top: 2%;
+  }
+
+
+}
