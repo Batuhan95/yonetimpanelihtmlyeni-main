@@ -35,7 +35,14 @@ function switchTheme() {
     const toggleIcons = document.querySelectorAll(".toggle-icon");
     const logo = document.getElementById('logoimg');
     const newLogoSrc = currentTheme === '/styles/scss/main.css' ? '/images/yellowcode-circle.svg' : '/images/code-circle.svg';
+    
     logo.setAttribute('src', newLogoSrc);
+
+    const envanter = document.getElementById('envanterrengi');
+    const newEnvanterSrc = currentTheme === '/styles/scss/main.css' ? '/images/yellowenvanter.svg' : '/images/mavibox.svg';
+    console.log(newEnvanterSrc);
+  
+    envanter.setAttribute('src', newEnvanterSrc);
 
     toggleIcons.forEach(function(icon) {
         if (currentTheme === '/styles/scss/main.css') {
