@@ -1,11 +1,4 @@
-$file-preview-padding: 10px;
-$file-preview-border: 1px solid #ccc;
-$file-preview-border-radius: 5px;
-$file-preview-gap: 10px;
-$button-bg: red;
-$button-color: white;
-$button-border-radius: 50%;
-$file-name-margin-top: 5px;
+@import "../abstract/variables";
 .hidden {
     display: none;
   }
@@ -31,7 +24,7 @@ $file-name-margin-top: 5px;
     background-color: rgba(0, 0, 0, 0.4);
   
     &-content {
-      background-color: #fefefe;
+      background-color: $modelcontent-color;
       margin: 15% auto;
       border: 1px solid #888;
       width: 80%;
@@ -40,9 +33,9 @@ $file-name-margin-top: 5px;
   
       .modalbasligi {
         display: flex;
-        background-color: rgba(40, 152, 236, 1);
+        background-color: $button-primary-bg;
         width: 100%;
-        color: white;
+        color: $button-primary-color;
   
         p {
           width: 50%;
@@ -51,7 +44,7 @@ $file-name-margin-top: 5px;
       }
   
       .close {
-        color: white;
+        color: $button-primary-color;
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -82,7 +75,7 @@ $file-name-margin-top: 5px;
         label {
           margin-top: 10px;
           margin-right: 10px;
-          color: rgba(40, 152, 236, 1);
+          color: $button-primary-bg;
           width: 30%;
         }
   
@@ -95,8 +88,8 @@ $file-name-margin-top: 5px;
         }
   
         input[type="submit"] {
-          background-color: rgba(40, 152, 236, 1);
-          color: white;
+          background-color: $button-primary-bg;
+          color: $button-primary-color;
           border: none;
           border-radius: 5px;
           cursor: pointer;
@@ -132,7 +125,7 @@ $file-name-margin-top: 5px;
       }
     }
     &-newcontent {
-      background-color: #fefefe;
+      background-color: $modelcontent-color;
       margin: 5% auto;
       border: 1px solid #888;
       width: 80%;
@@ -142,9 +135,9 @@ $file-name-margin-top: 5px;
   
       .modalbasligi {
         display: flex;
-        background-color: rgba(40, 152, 236, 1);
+        background-color: $button-primary-bg;
         width: 100%;
-        color: white;
+        color: $button-primary-color;
   
         p {
           width: 50%;
@@ -157,7 +150,7 @@ $file-name-margin-top: 5px;
       }
    
       .close {
-        color: white;
+        color: $button-primary-color;
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -188,7 +181,7 @@ $file-name-margin-top: 5px;
         label {
           margin-top: 10px;
           margin-right: 10px;
-          color: rgba(40, 152, 236, 1);
+          color: $button-primary-bg;
           width: 30%;
         }
   
@@ -201,8 +194,8 @@ $file-name-margin-top: 5px;
         }
   
         input[type="submit"] {
-          background-color: rgba(40, 152, 236, 1);
-          color: white;
+          background-color: $button-primary-bg;
+          color: $button-primary-color;
           border: none;
           border-radius: 5px;
           cursor: pointer;
@@ -272,10 +265,10 @@ $file-name-margin-top: 5px;
                 position: absolute;
                 top: 5px;
                 right: 5px;
-                background: $button-bg;
-                color: $button-color;
+                background: $button-danger-bg;
+                color: $button-primary-color;
                 border: none;
-                border-radius: $button-border-radius;
+                border-radius: $uzunluk-50;
                 cursor: pointer;
             }
     
@@ -291,7 +284,7 @@ $file-name-margin-top: 5px;
     label {
       margin-top: 10px;
       margin-right: 10px;
-      color: rgba(40, 152, 236, 1);
+      color: $button-primary-bg;
       width: 30%;
     }
 
@@ -304,8 +297,8 @@ $file-name-margin-top: 5px;
     }
 
     input[type="submit"] {
-      background-color: rgba(40, 152, 236, 1);
-      color: white;
+      background-color: $button-primary-bg;
+      color: $button-primary-color;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -316,8 +309,8 @@ $file-name-margin-top: 5px;
     }
   }
   .uploadbtn {
-    background: rgba(40, 152, 236, 1);
-    color: white;
+    background: $button-primary-bg;
+    color: $button-primary-color;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -337,16 +330,16 @@ $file-name-margin-top: 5px;
 
 
   .detail-btn {
-    background: rgba(40, 152, 236, 1);
-    color: white;
+    background: $button-primary-bg;
+    color: $button-primary-color;
     border: none;
     padding: 10px;
     cursor: pointer;
   }
   
   .detailnew-btn {
-    background: red;
-    color: white;
+    background: $button-danger-bg;
+    color: $button-primary-color;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -354,28 +347,28 @@ $file-name-margin-top: 5px;
   
   .detailekle-btn {
     background: green;
-    color: white;
+    color: $button-primary-color;
     border: none;
     padding: 10px;
     cursor: pointer;
   }
   
   .form-btn {
-    background: rgba(40, 152, 236, 1);
-    color: white;
+    background: $button-primary-bg;
+    color: $button-primary-color;
     border: none;
-    padding: 10px;
+    padding: $uzunluk-3;
     cursor: pointer;
-    margin-left: 30%;
+    margin-left: $uzunluk-30;
   }
   
   .formvazgec-btn {
-    background: red;
-    color: white;
+    background: $button-danger-bg;
+    color: $button-primary-color;
     border: none;
-    padding: 10px;
+    padding: $uzunluk-3;
     cursor: pointer;
-    margin-left: 1%;
+    margin-left: $uzunluk-1;
   }
   
   .eklemeform {
@@ -425,7 +418,7 @@ $file-name-margin-top: 5px;
   background-color: rgba(0, 0, 0, 0.4);
 
   &-content {
-      background-color: #fefefe;
+      background-color: $modelcontent-color;
       margin: 10% auto;
       border: 1px solid #888;
       width: 80%;
@@ -446,9 +439,9 @@ $file-name-margin-top: 5px;
       }
       .modalbasligi {
           display: flex;
-          background-color: rgba(40, 152, 236, 1);
+          background-color: $button-primary-bg;
           width: 100%;
-          color: white;
+          color: $button-primary-color;
 
           p {
               width: 50%;
@@ -458,9 +451,9 @@ $file-name-margin-top: 5px;
       .modalaltbasligi {
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: $button-primary-color;
         width: 100%;
-        color: rgba(40, 152, 236, 1);
+        color: $button-primary-bg;
   
         p {
           width: 100%;
@@ -477,12 +470,12 @@ $file-name-margin-top: 5px;
           td {
             padding: 10px;
             text-align: left;
-            border: 1px solid #ccc;
+            border: 1px solid $border-color-darkwhite;
           }
   
           th {
-            background-color: rgba(40, 152, 236, 1);
-            color: white;
+            background-color: $button-primary-bg;
+            color: $button-primary-color;
           }
         }
       }
@@ -490,8 +483,8 @@ $file-name-margin-top: 5px;
       .user-info {
           width: 30%;
           padding: 10px;
-          border-right: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
+          border-right: 1px solid $border-color-darkwhite;
+          border-bottom: 1px solid $border-color-darkwhite;
 
           form {
               display: flex;
@@ -499,7 +492,7 @@ $file-name-margin-top: 5px;
 
               label {
                   margin-top: 10px;
-                  color: rgba(40, 152, 236, 1);
+                  color: $button-primary-bg;
               }
 
               input {
@@ -515,7 +508,7 @@ $file-name-margin-top: 5px;
           width: 70%;
           padding: 10px;
           overflow-y: auto;
-          border-bottom: 1px solid #ccc;
+          border-bottom: 1px solid $border-color-darkwhite;
 
           ul {
               list-style-type: none;
@@ -524,14 +517,14 @@ $file-name-margin-top: 5px;
               li {
                   margin: 5px 0;
                   padding: 10px;
-                  border: 1px solid #ccc;
+                  border: 1px solid $border-color-darkwhite;
                   border-radius: 5px;
               }
           }
       }
 
       .close {
-          color: white;
+          color: $button-primary-color;
           float: right;
           font-size: 28px;
           font-weight: bold;
@@ -559,7 +552,7 @@ $file-name-margin-top: 5px;
   background-color: rgba(0, 0, 0, 0.4);
 
   &-content {
-      background-color: #fefefe;
+      background-color: $modelcontent-color;
       margin: 1% auto;
       border: 1px solid #888;
       width: 80%;
@@ -580,9 +573,9 @@ $file-name-margin-top: 5px;
       }
       .modalbasligi {
           display: flex;
-          background-color: rgba(40, 152, 236, 1);
+          background-color: $button-primary-bg;
           width: 100%;
-          color: white;
+          color: $button-primary-color;
 
           p {
               width: 50%;
@@ -592,9 +585,9 @@ $file-name-margin-top: 5px;
       .modalaltbasligi {
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: $button-primary-color;
         width: 100%;
-        color: rgba(40, 152, 236, 1);
+        color: $button-primary-bg;
   
         p {
           width: 100%;
@@ -615,12 +608,12 @@ $file-name-margin-top: 5px;
           td {
             padding: 10px;
             text-align: left;
-            border: 1px solid #ccc;
+            border: 1px solid $border-color-darkwhite;
           }
   
           th {
-            background-color: rgba(40, 152, 236, 1);
-            color: white;
+            background-color: $button-primary-bg;
+            color: $button-primary-color;
           }
         }
       }
@@ -628,8 +621,8 @@ $file-name-margin-top: 5px;
       .user-info {
           width: 30%;
           padding: 10px;
-          border-right: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
+          border-right: 1px solid $border-color-darkwhite;
+          border-bottom: 1px solid $border-color-darkwhite;
 
           form {
               display: flex;
@@ -637,7 +630,7 @@ $file-name-margin-top: 5px;
 
               label {
                   margin-top: 10px;
-                  color: rgba(40, 152, 236, 1);
+                  color: $button-primary-bg;
               }
 
               input {
@@ -653,7 +646,7 @@ $file-name-margin-top: 5px;
           width: 70%;
           padding: 10px;
           overflow-y: auto;
-          border-bottom: 1px solid #ccc;
+          border-bottom: 1px solid $border-color-darkwhite;
 
           ul {
               list-style-type: none;
@@ -662,14 +655,14 @@ $file-name-margin-top: 5px;
               li {
                   margin: 5px 0;
                   padding: 10px;
-                  border: 1px solid #ccc;
+                  border: 1px solid $border-color-darkwhite;
                   border-radius: 5px;
               }
           }
       }
 
       .close {
-          color: white;
+          color: $button-primary-color;
           float: right;
           font-size: 28px;
           font-weight: bold;

@@ -1,7 +1,8 @@
+@import "../abstract/variables";
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: $anasyafa-body;
     min-height: 100vh;
   }
   
@@ -14,7 +15,7 @@ body {
   
   .sidebar {
     width: 100%;
-    background: rgba(242, 246, 250, 1);
+    background: $anasyafa-sidebar;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: auto;
     display: flex;
@@ -23,7 +24,7 @@ body {
     .profile {
       text-align: center;
       padding: 20px;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid $profil-border-color;
   
       img {
         width: 80px;
@@ -45,16 +46,16 @@ body {
   
         li {
           padding: 1px 20px;
-          border-bottom: 1px solid #eee;
+          border-bottom: 1px solid $profil-border-color;
   
           &.active,
           &:hover {
-            background-color: rgba(40, 152, 236, 1);
+            background-color: $button-secondary-bg;
           }
   
           &.active a,
           &:hover a {
-            color: white;
+            color: $button-primary-color;
           }
   
           a {
@@ -75,14 +76,14 @@ body {
   .main-content {
     flex-grow: 1;
     padding: 20px;
-    background: #fff;
+    background: $button-primary-color;
   }
   
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background: $button-primary-color;
     padding: 10px;
   
     .title {
@@ -101,7 +102,7 @@ body {
   
       input {
         padding: 10px;
-        border: 1px solid #ccc;
+        border: 1px solid $border-color-darkwhite;
         border-radius: 10px;
         outline: none;
         margin-right: 10px;
@@ -140,6 +141,7 @@ body {
   
     .main-content {
       padding: 20px;
+      width: 80%;
     }
   
     .header {
@@ -174,8 +176,8 @@ body {
     .header {
       .title {
         width: 15%;
-        background: rgba(242, 246, 250, 1);
-        color: rgba(40, 152, 236, 1);
+        background: $anasyafa-sidebar;
+        color: $button-secondary-bg;
       }
     }
   }

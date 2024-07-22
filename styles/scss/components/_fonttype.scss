@@ -1,0 +1,56 @@
+@import "../abstract/variables";
+// Font Size Variables
+$font-size-xxs: 0.625rem;  // 10px
+$font-size-xs: 0.75rem;    // 12px
+$font-size-sm: 0.875rem;   // 14px
+$font-size-md: 1rem;       // 16px (default size)
+$font-size-lg: 1.125rem;   // 18px
+$font-size-xl: 1.25rem;    // 20px
+$font-size-xxl: 1.5rem;    // 24px
+$font-size-xxxl: 2rem;     // 32px
+
+// Utility Classes for Font Sizes
+.font-size-xxs {
+  font-size: $font-size-xxs;
+}
+
+.font-size-xs {
+  font-size: $font-size-xs;
+}
+
+.font-size-sm {
+  font-size: $font-size-sm;
+}
+
+.font-size-md {
+  font-size: $font-size-md;
+}
+
+.font-size-lg {
+  font-size: $font-size-lg;
+}
+
+.font-size-xl {
+  font-size: $font-size-xl;
+}
+
+.font-size-xxl {
+  font-size: $font-size-xxl;
+}
+
+.font-size-xxxl {
+  font-size: $font-size-xxxl;
+}
+.pointervarmi{
+    cursor: pointer;
+}
+.textcenterb{
+    text-align: center;
+}
+.textleftb{
+    text-align: left;
+}
+.textrightb{
+    text-align: right;
+}
+

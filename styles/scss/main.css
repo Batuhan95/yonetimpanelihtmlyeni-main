@@ -48,7 +48,7 @@ body {
   background-color: rgb(40, 152, 236);
 }
 .sidebar .nav ul li.active a, .sidebar .nav ul li:hover a {
-  color: white;
+  color: #fff;
 }
 .sidebar .nav ul li a {
   text-decoration: none;
@@ -121,6 +121,7 @@ body {
   }
   .main-content {
     padding: 20px;
+    width: 80%;
   }
   .header {
     padding-bottom: 20px;
@@ -277,14 +278,14 @@ span.newtoggle {
   display: flex;
   background-color: rgb(40, 152, 236);
   width: 100%;
-  color: white;
+  color: #fff;
 }
 .modal-content .modalbasligi p {
   width: 50%;
   margin-left: 40%;
 }
 .modal-content .close {
-  color: white;
+  color: #fff;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -328,7 +329,7 @@ span.newtoggle {
 .modal-content .bform input[type=submit],
 .modal-content .yeniform input[type=submit] {
   background-color: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -365,7 +366,7 @@ span.newtoggle {
   display: flex;
   background-color: rgb(40, 152, 236);
   width: 100%;
-  color: white;
+  color: #fff;
 }
 .modal-newcontent .modalbasligi p {
   width: 50%;
@@ -376,7 +377,7 @@ span.newtoggle {
   overflow-y: auto;
 }
 .modal-newcontent .close {
-  color: white;
+  color: #fff;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -420,7 +421,7 @@ span.newtoggle {
 .modal-newcontent .bform input[type=submit],
 .modal-newcontent .yeniform input[type=submit] {
   background-color: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -480,8 +481,8 @@ span.newtoggle {
   position: absolute;
   top: 5px;
   right: 5px;
-  background: red;
-  color: white;
+  background: #dc3545;
+  color: #fff;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -506,7 +507,7 @@ span.newtoggle {
 }
 .eklemeform input[type=submit] {
   background-color: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -517,7 +518,7 @@ span.newtoggle {
 
 .uploadbtn {
   background: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -535,15 +536,15 @@ span.newtoggle {
 
 .detail-btn {
   background: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
   border: none;
   padding: 10px;
   cursor: pointer;
 }
 
 .detailnew-btn {
-  background: red;
-  color: white;
+  background: #dc3545;
+  color: #fff;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -551,7 +552,7 @@ span.newtoggle {
 
 .detailekle-btn {
   background: green;
-  color: white;
+  color: #fff;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -559,18 +560,18 @@ span.newtoggle {
 
 .form-btn {
   background: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
   border: none;
-  padding: 10px;
+  padding: 3%;
   cursor: pointer;
   margin-left: 30%;
 }
 
 .formvazgec-btn {
-  background: red;
-  color: white;
+  background: #dc3545;
+  color: #fff;
   border: none;
-  padding: 10px;
+  padding: 3%;
   cursor: pointer;
   margin-left: 1%;
 }
@@ -633,7 +634,7 @@ span.newtoggle {
   display: flex;
   background-color: rgb(40, 152, 236);
   width: 100%;
-  color: white;
+  color: #fff;
 }
 .duzenlememodali-content .modalbasligi p {
   width: 50%;
@@ -642,7 +643,7 @@ span.newtoggle {
 .duzenlememodali-content .modalaltbasligi {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   color: rgb(40, 152, 236);
 }
@@ -664,7 +665,7 @@ span.newtoggle {
 }
 .duzenlememodali-content .modalaltbasligi table th {
   background-color: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
 }
 .duzenlememodali-content .user-info {
   width: 30%;
@@ -703,7 +704,7 @@ span.newtoggle {
   border-radius: 5px;
 }
 .duzenlememodali-content .close {
-  color: white;
+  color: #fff;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -751,7 +752,7 @@ span.newtoggle {
   display: flex;
   background-color: rgb(40, 152, 236);
   width: 100%;
-  color: white;
+  color: #fff;
 }
 .detaymodali-content .modalbasligi p {
   width: 50%;
@@ -760,7 +761,7 @@ span.newtoggle {
 .detaymodali-content .modalaltbasligi {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   color: rgb(40, 152, 236);
 }
@@ -786,7 +787,7 @@ span.newtoggle {
 }
 .detaymodali-content .modalaltbasligi table th {
   background-color: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
 }
 .detaymodali-content .user-info {
   width: 30%;
@@ -825,7 +826,7 @@ span.newtoggle {
   border-radius: 5px;
 }
 .detaymodali-content .close {
-  color: white;
+  color: #fff;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -851,16 +852,14 @@ span.newtoggle {
 }
 .detail-btn {
   background: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  margin-right: 5px;
 }
 
 .detailnew-btn {
-  background: red;
-  color: white;
+  background: #dc3545;
+  color: #fff;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -868,7 +867,7 @@ span.newtoggle {
 
 .detailekle-btn {
   background: #23cf51;
-  color: white;
+  color: #fff;
   border: none;
   padding: 8px;
   cursor: pointer;
@@ -877,34 +876,28 @@ span.newtoggle {
 
 .form-btn {
   background: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  margin-left: 30%;
 }
 
 .formvazgec-btn {
-  background: red;
-  color: white;
+  background: #dc3545;
+  color: #fff;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  margin-left: 1%;
 }
 
 .formsil-btn {
-  background: red;
-  color: white;
+  background: #dc3545;
+  color: #fff;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  margin-right: 5px;
 }
 
 .detayonayla-btn {
   background: rgb(40, 152, 236);
-  color: white;
+  color: #fff;
   border: none;
   width: 80%;
   cursor: pointer;
@@ -912,8 +905,8 @@ span.newtoggle {
 }
 
 .detayvazgec-btn {
-  background: red;
-  color: white;
+  background: #dc3545;
+  color: #fff;
   border: none;
   width: 80%;
   cursor: pointer;
@@ -925,4 +918,870 @@ span.newtoggle {
   .detailnew-btn {
     margin-top: 2%;
   }
+}
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: rgb(40, 152, 236);
+  border: 1px solid transparent;
+  padding: 5% 10%;
+  font-size: 100%;
+  border-radius: 5%;
+  transition: all 0.15s ease-in-out;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.button-primary {
+  background-color: rgb(40, 152, 236);
+  color: #fff;
+}
+
+.button-secondary {
+  background-color: rgb(40, 152, 236);
+  color: #fff;
+}
+
+.button-success {
+  background-color: #23cf51;
+  color: #fff;
+}
+
+.button-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.button-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.button-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.button-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.button-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.text-primary {
+  color: rgb(40, 152, 236);
+}
+
+.text-secondary {
+  color: rgb(40, 152, 236);
+}
+
+.text-success {
+  color: #23cf51;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.text-info {
+  color: #17a2b8;
+}
+
+.text-light {
+  color: #f8f9fa;
+}
+
+.text-dark {
+  color: #343a40;
+}
+
+.m-1 {
+  margin: 1%;
+}
+
+.m-2 {
+  margin: 2%;
+}
+
+.m-3 {
+  margin: 3%;
+}
+
+.m-4 {
+  margin: 4%;
+}
+
+.m-5 {
+  margin: 5%;
+}
+
+.m-10 {
+  margin: 10%;
+}
+
+.m-15 {
+  margin: 15%;
+}
+
+.m-20 {
+  margin: 20%;
+}
+
+.m-25 {
+  margin: 25%;
+}
+
+.m-30 {
+  margin: 30%;
+}
+
+.m-35 {
+  margin: 35%;
+}
+
+.m-40 {
+  margin: 40%;
+}
+
+.m-45 {
+  margin: 45%;
+}
+
+.m-50 {
+  margin: 50%;
+}
+
+.m-55 {
+  margin: 55%;
+}
+
+.m-60 {
+  margin: 60%;
+}
+
+.m-65 {
+  margin: 65%;
+}
+
+.m-70 {
+  margin: 70%;
+}
+
+.m-75 {
+  margin: 75%;
+}
+
+.m-80 {
+  margin: 80%;
+}
+
+.m-85 {
+  margin: 85%;
+}
+
+.m-90 {
+  margin: 90%;
+}
+
+.m-95 {
+  margin: 95%;
+}
+
+.m-100 {
+  margin: 100%;
+}
+
+.mt-1 {
+  margin: 1%;
+}
+
+.mt-2 {
+  margin: 2%;
+}
+
+.mt-3 {
+  margin: 3%;
+}
+
+.mt-4 {
+  margin: 4%;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+.mt-10 {
+  margin-top: 10%;
+}
+
+.mt-15 {
+  margin-top: 15%;
+}
+
+.mt-20 {
+  margin-top: 20%;
+}
+
+.mt-25 {
+  margin-top: 25%;
+}
+
+.mt-30 {
+  margin-top: 30%;
+}
+
+.mt-35 {
+  margin-top: 35%;
+}
+
+.mt-40 {
+  margin-top: 40%;
+}
+
+.mt-45 {
+  margin-top: 45%;
+}
+
+.mt-50 {
+  margin-top: 50%;
+}
+
+.mt-55 {
+  margin-top: 55%;
+}
+
+.mt-60 {
+  margin-top: 60%;
+}
+
+.mt-65 {
+  margin-top: 65%;
+}
+
+.mt-70 {
+  margin-top: 70%;
+}
+
+.mt-75 {
+  margin-top: 75%;
+}
+
+.mt-80 {
+  margin-top: 80%;
+}
+
+.mt-85 {
+  margin-top: 85%;
+}
+
+.mt-90 {
+  margin-top: 90%;
+}
+
+.mt-95 {
+  margin-top: 95%;
+}
+
+.mt-100 {
+  margin-top: 100%;
+}
+
+.mr-1 {
+  margin: 1%;
+}
+
+.mr-2 {
+  margin: 2%;
+}
+
+.mr-3 {
+  margin: 3%;
+}
+
+.mr-4 {
+  margin: 4%;
+}
+
+.mr-5 {
+  margin-right: 5%;
+}
+
+.mr-10 {
+  margin-right: 10%;
+}
+
+.mr-15 {
+  margin-right: 15%;
+}
+
+.mr-20 {
+  margin-right: 20%;
+}
+
+.mr-25 {
+  margin-right: 25%;
+}
+
+.mr-30 {
+  margin-right: 30%;
+}
+
+.mr-35 {
+  margin-right: 35%;
+}
+
+.mr-40 {
+  margin-right: 40%;
+}
+
+.mr-45 {
+  margin-right: 45%;
+}
+
+.mr-50 {
+  margin-right: 50%;
+}
+
+.mr-55 {
+  margin-right: 55%;
+}
+
+.mr-60 {
+  margin-right: 60%;
+}
+
+.mr-65 {
+  margin-right: 65%;
+}
+
+.mr-70 {
+  margin-right: 70%;
+}
+
+.mr-75 {
+  margin-right: 75%;
+}
+
+.mr-80 {
+  margin-right: 80%;
+}
+
+.mr-85 {
+  margin-right: 85%;
+}
+
+.mr-90 {
+  margin-right: 90%;
+}
+
+.mr-95 {
+  margin-right: 95%;
+}
+
+.mr-100 {
+  margin-right: 100%;
+}
+
+.mb-1 {
+  margin: 1%;
+}
+
+.mb-2 {
+  margin: 2%;
+}
+
+.mb-3 {
+  margin: 3%;
+}
+
+.mb-4 {
+  margin: 4%;
+}
+
+.mb-5 {
+  margin-bottom: 5%;
+}
+
+.mb-10 {
+  margin-bottom: 10%;
+}
+
+.mb-15 {
+  margin-bottom: 15%;
+}
+
+.mb-20 {
+  margin-bottom: 20%;
+}
+
+.mb-25 {
+  margin-bottom: 25%;
+}
+
+.mb-30 {
+  margin-bottom: 30%;
+}
+
+.mb-35 {
+  margin-bottom: 35%;
+}
+
+.mb-40 {
+  margin-bottom: 40%;
+}
+
+.mb-45 {
+  margin-bottom: 45%;
+}
+
+.mb-50 {
+  margin-bottom: 50%;
+}
+
+.mb-55 {
+  margin-bottom: 55%;
+}
+
+.mb-60 {
+  margin-bottom: 60%;
+}
+
+.mb-65 {
+  margin-bottom: 65%;
+}
+
+.mb-70 {
+  margin-bottom: 70%;
+}
+
+.mb-75 {
+  margin-bottom: 75%;
+}
+
+.mb-80 {
+  margin-bottom: 80%;
+}
+
+.mb-85 {
+  margin-bottom: 85%;
+}
+
+.mb-90 {
+  margin-bottom: 90%;
+}
+
+.mb-95 {
+  margin-bottom: 95%;
+}
+
+.mb-100 {
+  margin-bottom: 100%;
+}
+
+.ml-1 {
+  margin: 1%;
+}
+
+.ml-2 {
+  margin: 2%;
+}
+
+.ml-3 {
+  margin: 3%;
+}
+
+.ml-4 {
+  margin: 4%;
+}
+
+.ml-5 {
+  margin-left: 5%;
+}
+
+.ml-10 {
+  margin-left: 10%;
+}
+
+.ml-15 {
+  margin-left: 15%;
+}
+
+.ml-20 {
+  margin-left: 20%;
+}
+
+.ml-25 {
+  margin-left: 25%;
+}
+
+.ml-30 {
+  margin-left: 30%;
+}
+
+.ml-35 {
+  margin-left: 35%;
+}
+
+.ml-40 {
+  margin-left: 40%;
+}
+
+.ml-45 {
+  margin-left: 45%;
+}
+
+.ml-50 {
+  margin-left: 50%;
+}
+
+.ml-55 {
+  margin-left: 55%;
+}
+
+.ml-60 {
+  margin-left: 60%;
+}
+
+.ml-65 {
+  margin-left: 65%;
+}
+
+.ml-70 {
+  margin-left: 70%;
+}
+
+.ml-75 {
+  margin-left: 75%;
+}
+
+.ml-80 {
+  margin-left: 80%;
+}
+
+.ml-85 {
+  margin-left: 85%;
+}
+
+.ml-90 {
+  margin-left: 90%;
+}
+
+.ml-95 {
+  margin-left: 95%;
+}
+
+.ml-100 {
+  margin-left: 100%;
+}
+
+.p-5 {
+  padding: 5%;
+}
+
+.p-10 {
+  padding: 10%;
+}
+
+.p-15 {
+  padding: 15%;
+}
+
+.p-20 {
+  padding: 20%;
+}
+
+.p-25 {
+  padding: 25%;
+}
+
+.p-30 {
+  padding: 30%;
+}
+
+.p-35 {
+  padding: 35%;
+}
+
+.p-40 {
+  padding: 40%;
+}
+
+.p-45 {
+  padding: 45%;
+}
+
+.p-50 {
+  padding: 50%;
+}
+
+.p-55 {
+  padding: 55%;
+}
+
+.p-60 {
+  padding: 60%;
+}
+
+.p-65 {
+  padding: 65%;
+}
+
+.p-70 {
+  padding: 70%;
+}
+
+.p-75 {
+  padding: 75%;
+}
+
+.p-80 {
+  padding: 80%;
+}
+
+.p-85 {
+  padding: 85%;
+}
+
+.p-90 {
+  padding: 90%;
+}
+
+.p-95 {
+  padding: 95%;
+}
+
+.p-100 {
+  padding: 100%;
+}
+
+.pt-5 {
+  padding-top: 5%;
+}
+
+.pt-10 {
+  padding-top: 10%;
+}
+
+.pt-15 {
+  padding-top: 15%;
+}
+
+.pt-20 {
+  padding-top: 20%;
+}
+
+.pt-25 {
+  padding-top: 25%;
+}
+
+.pt-30 {
+  padding-top: 30%;
+}
+
+.pt-35 {
+  padding-top: 35%;
+}
+
+.pt-40 {
+  padding-top: 40%;
+}
+
+.pt-45 {
+  padding-top: 45%;
+}
+
+.pt-50 {
+  padding-top: 50%;
+}
+
+.pt-55 {
+  padding-top: 55%;
+}
+
+.pt-60 {
+  padding-top: 60%;
+}
+
+.pt-65 {
+  padding-top: 65%;
+}
+
+.pt-70 {
+  padding-top: 70%;
+}
+
+.pt-75 {
+  padding-top: 75%;
+}
+
+.pt-80 {
+  padding-top: 80%;
+}
+
+.pt-85 {
+  padding-top: 85%;
+}
+
+.pt-90 {
+  padding-top: 90%;
+}
+
+.pt-95 {
+  padding-top: 95%;
+}
+
+.pt-100 {
+  padding-top: 100%;
+}
+
+.pl-5 {
+  padding-left: 5%;
+}
+
+.pl-10 {
+  padding-left: 10%;
+}
+
+.pl-15 {
+  padding-left: 15%;
+}
+
+.pl-20 {
+  padding-left: 20%;
+}
+
+.pl-25 {
+  padding-left: 25%;
+}
+
+.pl-30 {
+  padding-left: 30%;
+}
+
+.pl-35 {
+  padding-left: 35%;
+}
+
+.pl-40 {
+  padding-left: 40%;
+}
+
+.pl-45 {
+  padding-left: 45%;
+}
+
+.pl-50 {
+  padding-left: 50%;
+}
+
+.pl-55 {
+  padding-left: 55%;
+}
+
+.pl-60 {
+  padding-left: 60%;
+}
+
+.pl-65 {
+  padding-left: 65%;
+}
+
+.pl-70 {
+  padding-left: 70%;
+}
+
+.pl-75 {
+  padding-left: 75%;
+}
+
+.pl-80 {
+  padding-left: 80%;
+}
+
+.pl-85 {
+  padding-left: 85%;
+}
+
+.pl-90 {
+  padding-left: 90%;
+}
+
+.pl-95 {
+  padding-left: 95%;
+}
+
+.pl-100 {
+  padding-left: 100%;
+}
+
+.font-size-xxs {
+  font-size: 0.625rem;
+}
+
+.font-size-xs {
+  font-size: 0.75rem;
+}
+
+.font-size-sm {
+  font-size: 0.875rem;
+}
+
+.font-size-md {
+  font-size: 1rem;
+}
+
+.font-size-lg {
+  font-size: 1.125rem;
+}
+
+.font-size-xl {
+  font-size: 1.25rem;
+}
+
+.font-size-xxl {
+  font-size: 1.5rem;
+}
+
+.font-size-xxxl {
+  font-size: 2rem;
+}
+
+.pointervarmi {
+  cursor: pointer;
+}
+
+.textcenterb {
+  text-align: center;
+}
+
+.textleftb {
+  text-align: left;
+}
+
+.textrightb {
+  text-align: right;
 }/*# sourceMappingURL=main.css.map */

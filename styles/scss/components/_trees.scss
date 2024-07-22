@@ -1,6 +1,6 @@
 .treeview {
     width: 100%;
-    background-color: #fff;
+    background-color: $button-primary-color;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
@@ -11,7 +11,7 @@
   
       li {
         padding: 5px 0;
-        color: rgba(40, 152, 236, 1);
+        color: $button-secondary-bg;
   
         ul {
           padding-left: 20px;

@@ -1,0 +1,181 @@
+$anasyafa-body:#f4f4f4;
+$anasyafa-sidebar:rgba(242, 246, 250, 1);
+$button-primary-bg: rgb(40, 152, 236);
+$button-secondary-bg: rgba(40, 152, 236, 1);
+$button-success-bg: #23cf51;;
+$button-danger-bg: #dc3545;
+$button-warning-bg: #ffc107;
+$button-info-bg: #17a2b8;
+$button-light-bg: #f8f9fa;
+$button-dark-bg: #343a40;
+
+$button-primary-color: #fff;
+$button-secondary-color: #fff;
+$button-success-color: #fff;
+$button-danger-color: #fff;
+$button-warning-color: #212529;
+$button-info-color: #fff;
+$button-light-color: #212529;
+$button-dark-color: #fff;
+
+// Percentage Variables
+$button-padding-y-percent: 5%; // Yatay padding yüzdesi
+$button-padding-x-percent: 10%; // Dikey padding yüzdesi
+$button-font-size-percent: 100%; // Font büyüklüğü yüzdesi
+$button-border-radius-percent: 5%; // Border radius yüzdesi
+
+// Border Variables
+$button-border-width: 1px;
+$button-border-color: transparent;
+
+// Hover and Focus Variables
+$button-hover-opacity: 0.8;
+$button-focus-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+
+// Disabled State Variables
+$button-disabled-opacity: 0.65;
+$button-disabled-cursor: not-allowed;
+
+// Transition Variables
+$button-transition: all 0.15s ease-in-out;
+$profil-border-color:#eee;
+
+
+
+$font-size-xxs: 0.625rem;  // 10px
+$font-size-xs: 0.75rem;    // 12px
+$font-size-sm: 0.875rem;   // 14px
+$font-size-md: 1rem;       // 16px (default size)
+$font-size-lg: 1.125rem;   // 18px
+$font-size-xl: 1.25rem;    // 20px
+$font-size-xxl: 1.5rem;    // 24px
+$font-size-xxxl: 2rem;     // 32px
+
+// Border Width Variables
+$border-width-thin: 1px;
+$border-width-medium: 2px;
+$border-width-thick: 4px;
+
+// Border Color Variables
+$border-color-light: #e0e0e0;
+$border-color-dark: #333333;
+$border-color-primary: #007bff;
+$border-color-secondary: #6c757d;
+$border-color-success: #28a745;
+$border-color-danger: #dc3545;
+$border-color-warning: #ffc107;
+$border-color-info: #17a2b8;
+$border-color-darkwhite: #ccc;
+
+// Border Style Variables
+$border-style-solid: solid;
+$border-style-dashed: dashed;
+$border-style-dotted: dotted;
+
+$input-height-small: 2rem;
+$input-height-medium: 2.5rem;
+$input-height-large: 3rem;
+
+$input-padding-small: 0.5rem;
+$input-padding-medium: 1rem;
+$input-padding-large: 1.5rem;
+
+$input-font-size-small: 0.875rem; // 14px
+$input-font-size-medium: 1rem;    // 16px
+$input-font-size-large: 1.25rem;  // 20px
+
+// Input Border Variables
+$input-border-width: 1px;
+$input-border-radius: 0.25rem;
+$input-border-color: #ced4da;
+
+// Input Background Variables
+$input-background-color: #fff;
+$input-background-color-focus: #e9ecef;
+$input-background-color-disabled: #e9ecef;
+
+// Input Text Variables
+$input-text-color: #495057;
+$input-placeholder-color: #6c757d;
+
+// Checkbox Size Variables
+$checkbox-size-small: 1rem;
+$checkbox-size-medium: 1.25rem;
+$checkbox-size-large: 1.5rem;
+
+// Checkbox Border Variables
+$checkbox-border-width: 2px;
+$checkbox-border-radius: 0.25rem;
+$checkbox-border-color: #ced4da;
+
+// Checkbox Background Variables
+$checkbox-background-color: #fff;
+$checkbox-background-color-checked: #007bff;
+$checkbox-background-color-disabled: #e9ecef;
+
+// Checkbox Checkmark Variables
+$checkbox-checkmark-color: #fff;
+$checkbox-checkmark-size-small: 0.5rem;
+$checkbox-checkmark-size-medium: 0.75rem;
+$checkbox-checkmark-size-large: 1rem;
+
+$select-height-small: 2rem;
+$select-height-medium: 2.5rem;
+$select-height-large: 3rem;
+
+$select-padding-small: 0.5rem;
+$select-padding-medium: 1rem;
+$select-padding-large: 1.5rem;
+
+$select-font-size-small: 0.875rem; // 14px
+$select-font-size-medium: 1rem;    // 16px
+$select-font-size-large: 1.25rem;  // 20px
+
+// Select Border Variables
+$select-border-width: 1px;
+$select-border-radius: 0.25rem;
+$select-border-color: #ced4da;
+
+// Select Background Variables
+$select-background-color: #fff;
+$select-background-color-focus: #e9ecef;
+$select-background-color-disabled: #e9ecef;
+
+// Select Text Variables
+$select-text-color: #495057;
+$select-placeholder-color: #6c757d;
+
+$uzunluk-1: 1%;
+$uzunluk-2: 2%;
+$uzunluk-3: 3%;
+$uzunluk-4: 4%;
+$uzunluk-5: 5%;
+$uzunluk-10: 10%;
+$uzunluk-15: 15%;
+$uzunluk-20: 20%;
+$uzunluk-25: 25%;
+$uzunluk-30: 30%;
+$uzunluk-35: 35%;
+$uzunluk-40: 40%;
+$uzunluk-45: 45%;
+$uzunluk-50: 50%;
+$uzunluk-55: 55%;
+$uzunluk-60: 60%;
+$uzunluk-65: 65%;
+$uzunluk-70: 70%;
+$uzunluk-75: 75%;
+$uzunluk-80: 80%;
+$uzunluk-85: 85%;
+$uzunluk-90: 90%;
+$uzunluk-95: 95%;
+$uzunluk-100: 100%;
+
+$file-preview-padding: 10px;
+$file-preview-border: 1px solid #ccc;
+$file-preview-border-radius: 5px;
+$file-preview-gap: 10px;
+
+
+$file-name-margin-top: 5px;
+
+$modelcontent-color:#fefefe;

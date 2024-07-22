@@ -1,23 +1,24 @@
+@import "../abstract/variables";
 .detail-btn {
-  background: rgba(40, 152, 236, 1);
-  color: white;
+  background: $button-primary-bg;
+  color: $button-primary-color;
   border: none;
-  padding: 10px;
+
   cursor: pointer;
-  margin-right: 5px;
+
 }
 
 .detailnew-btn {
-  background: red;
-  color: white;
+  background: $button-danger-bg;
+  color: $button-primary-color;
   border: none;
   padding: 10px;
   cursor: pointer;
 }
 
 .detailekle-btn {
-  background: #23cf51;
-  color: white;
+  background: $button-success-bg;
+  color: $button-primary-color;
   border: none;
   padding: 8px;
   cursor: pointer;
@@ -26,34 +27,33 @@
 }
 
 .form-btn {
-  background: rgba(40, 152, 236, 1);
-  color: white;
+  background: $button-primary-bg;
+  color: $button-primary-color;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  margin-left: 30%;
+
 }
 
 .formvazgec-btn {
-  background: red;
-  color: white;
+  background: $button-danger-bg;
+  color: $button-primary-color;
   border: none;
-  padding: 10px;
+
   cursor: pointer;
-  margin-left: 1%;
+ 
 }
 .formsil-btn {
-  background: red;
-  color: white;
+  background: $button-danger-bg;
+  color: $button-primary-color;
   border: none;
-  padding: 10px;
+
   cursor: pointer;
-  margin-right: 5px;
+ 
 
 }
 .detayonayla-btn {
-  background: rgba(40, 152, 236, 1);
-  color: white;
+  background: $button-primary-bg;
+  color: $button-primary-color;
   border: none;
   width: 80%;
   cursor: pointer;
@@ -62,8 +62,8 @@
 }
 
 .detayvazgec-btn {
-  background: red;
-  color: white;
+  background: $button-danger-bg;
+  color: $button-primary-color;
   border: none;
   width: 80%;
   cursor: pointer;
