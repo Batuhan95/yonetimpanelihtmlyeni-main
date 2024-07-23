@@ -1580,6 +1580,26 @@ span.newtoggle {
   margin-left: 100%;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .p-5 {
   padding: 5%;
 }
@@ -1818,4 +1838,24 @@ span.newtoggle {
 
 .pl-100 {
   padding-left: 100%;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pr-0 {
+  padding-right: 0px;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }/*# sourceMappingURL=darkmain.css.map */
