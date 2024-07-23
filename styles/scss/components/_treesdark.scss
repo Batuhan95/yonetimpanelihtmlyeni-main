@@ -1,8 +1,8 @@
 @import "../abstract/variables";
 .treeview {
     width: 100%;
-    background-color: $anasayfa-bodydark;
-    box-shadow: 0 0 10px $anasyafa-sidebardark;
+    background-color: $anasyafa-sidebardark;
+    box-shadow: 0 0 10px $anasayfa-bodydark;
     padding: 20px;
     margin-bottom: 20px;
   
@@ -12,13 +12,14 @@
   
       li {
         padding: 5px 0;
-        color: $button-warning-bg;
+        color: $button-primary-color;
   
         ul {
           padding-left: 20px;
         }
       }
     }
+    
   }
   @media (min-width: 768px) {
 

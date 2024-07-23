@@ -34,19 +34,19 @@ function switchTheme() {
 
     const toggleIcons = document.querySelectorAll(".toggle-icon");
     const logo = document.getElementById('logoimg');
-    const newLogoSrc = currentTheme === '/styles/scss/main.css' ? '/images/yellowcode-circle.svg' : '/images/code-circle.svg';
+    const newLogoSrc = currentTheme === '/styles/scss/main.css' ? '/images/whitecode-circle.svg' : '/images/code-circle.svg';
     
     logo.setAttribute('src', newLogoSrc);
 
     const envanter = document.getElementById('envanterrengi');
-    const newEnvanterSrc = currentTheme === '/styles/scss/main.css' ? '/images/yellowenvanter.svg' : '/images/mavibox.svg';
+    const newEnvanterSrc = currentTheme === '/styles/scss/main.css' ? '/images/whiteenvanter.svg' : '/images/mavibox.svg';
     console.log(newEnvanterSrc);
   
     envanter.setAttribute('src', newEnvanterSrc);
 
     toggleIcons.forEach(function(icon) {
         if (currentTheme === '/styles/scss/main.css') {
-            icon.src = "/images/yellowadd.svg"; // Karanlık tema için simge
+            icon.src = "/images/whiteadd.svg"; // Karanlık tema için simge
         } else {
             icon.src = "/images/add.svg"; // Açık tema için simge
         }

@@ -1,7 +1,7 @@
 $anasyafa-body:#f4f4f4;
-$anasayfa-bodydark:black;
+$anasayfa-bodydark:rgba(13, 20, 32, 1);
 $anasyafa-sidebar:rgba(242, 246, 250, 1);
-$anasyafa-sidebardark:#808080;
+$anasyafa-sidebardark: rgba(23, 31, 45, 1);;
 $button-primary-bg: rgb(40, 152, 236);
 $button-secondary-bg: rgba(40, 152, 236, 1);
 $button-success-bg: #23cf51;;
@@ -11,7 +11,12 @@ $button-info-bg: #17a2b8;
 $button-light-bg: #f8f9fa;
 $button-dark-bg: #343a40;
 
-$button-primary-color: #fff;
+$table-light-odd:rgba(242, 246, 250, 1);
+$table-light-even:rgba(254, 254, 254, 1);
+$border-sag:1px solid rgba(40, 152, 236, 0.5);
+
+
+$button-primary-color: rgba(254, 254, 254, 1);
 $button-secondary-color: #fff;
 $button-success-color: #fff;
 $button-danger-color: #fff;

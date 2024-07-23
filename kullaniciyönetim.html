@@ -1,218 +1,166 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proje Envaneri</title>
-    <link rel="stylesheet" href="/styles/scss/main.css">
-    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+    <link id="theme-link" rel="stylesheet" href="/styles/scss/main.css">
 </head>
 <body>
-    <div class="yeni">     <header class="header">
-        <div class="title">
-         
-            <div><img src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+    <div b-y5krlka80t class="yeni">     <header b-y5krlka80t class="header">
+        <div b-y5krlka80t class="title">
+
+                <div b-y5krlka80t><img b-y5krlka80t id="logoimg" src="/images/code-circle.svg"><p b-y5krlka80t>Yazılım Yönetimi</p></div>
         </div>
-        <div class="search">
-            <input type="text" placeholder="Ara">
-            <button><img src="images/logout.svg" alt="Search"></button>
+        <div b-y5krlka80t class="search">
+            <input b-y5krlka80t type="text" placeholder="Ara">
+                <button b-y5krlka80t><img b-y5krlka80t src="/images/logout.svg" alt="Search"></button>
+                <button b-y5krlka80t class="text-primary" type="button" onclick="switchTheme()">Tema Değiştir</button>
         </div></div>
-    <div class="container">
+    <div b-y5krlka80t class="container">
         
-        <aside class="sidebar">
-            <div class="profile">
-                <img src="images/worker1.svg" alt="Profile Picture">
-                <h3>Fırat ÖZKAN</h3>
+        <aside b-y5krlka80t class="sidebar">
+            <div b-y5krlka80t class="profile">
+                <img b-y5krlka80t src="/images/worker1.svg" alt="Profile Picture">
+                <h3 b-y5krlka80t>Yönetim Paneli</h3>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#"><img src="images/envantersiyah.svg"><p>Envanter</p></a></li>
-                    <li class="active"><a href="#"><img src="images/yetkilendirme.svg"><p>Yetkilendirme</p></a></li>
-                    <li><a href="#"><img src="images/key.svg"><p>Lisans Anahtarı Üret</p></a></li>
-                    <li><a href="#"><img src="images/lisansyetkileri.svg"><p>Lisans Yetkileri</p></a></li>
+            <nav b-y5krlka80t class="nav">
+                <ul b-y5krlka80t>
+                    <li b-y5krlka80t class=""><a b-y5krlka80t href="/"><img b-y5krlka80t src="/images/envantersiyah.svg"><p b-y5krlka80t>Proje Envanteri</p></a></li>
+                    <li b-y5krlka80t class="active"><a b-y5krlka80t href="/home/kullaniciyonetimi"><img b-y5krlka80t src="/images/yetkilendirme.svg"><p b-y5krlka80t>Kullanıcı Yönetimi</p></a></li>
+       
                 </ul>
             </nav>
         </aside>
-        <main class="main-content">
-       
-          <h3 style="color:rgba(40, 152, 236, 1)"><img  src="/images/mavibox.svg"> Envanteri</h3>
-          <h4 style="margin-left: 2%;color:rgba(40, 152, 236, 1)">Proje - Controller - Metot</h4>
-          <button class="detailekle-btn" onclick="openModal()" style="margin-left: 2%">Yeni Ekle</button>
-          <button class="detailekle-btn" style="margin-left: 1%"><a style="color: white;text-decoration: none;" href="yeniekle.html">Yeni Sayfada Ekle</a></button>
-            <section class="content">
-             
-                <div class="tablenew" id="data-table">
-                   
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Id</th>
-                                <th>Kurum Adı</th>
-                                <th>Kullanıcı Adı</th>
-                                <th>Active Dir</th>
-                                <th>Aktif/Pasif</th>
-                                <th>KayitTarihi</th>
-                                <th>Detay</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="expandable">
-                                <td>></td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>innosa.wapi.usr</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>24.03.2024</td>
-                                <td></td>
-                            </tr>
-                          
-                            <tr class="expandable">
-                                <td>></td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>yazilim.wapi.usr</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>24.03.2024</td>
-                                <td></td>
-                            </tr>
-                            <tr class="expandable">
-                                <td>></td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>ıztek.wapi.usr</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>24.03.2024</td>
-                                <td></td>
-                            </tr>
-                            <tr class="expandable">
-                                <td>></td>
-                                <td>4</td>
-                                <td>4</td>
-                                <td>eshot.wapi.usr</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>12.06.2024</td>
-                                <td></td>
-                            </tr>
-                            <tr class="expandable">
-                                <td>></td>
-                                <td>5</td>
-                                <td>1</td>
-                                <td>onder_aycan</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>11.07.2024</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </main>
-    </div>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="modalbasligi">
-                <p>Proje Detayları</p>
-            <span class="close" onclick="closeModal()">&times;</span>
-            
-        </div>
-            <form class="bform">
-                <div>
-                <label for="license-key">Lisans Anahtarı</label>
-                <input type="text" id="license-key" name="license-key" required>
-            </div>
-            <div>
-                <label for="username">Kullanıcı Adı</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <label for="license-key">Lisans Anahtarı</label>
-                <input type="text" id="license-key" name="license-key" required>
-            </div>
-            <div>
-                <label for="username">Kullanıcı Adı</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <label for="license-key">Lisans Anahtarı</label>
-                <input type="text" id="license-key" name="license-key" required>
-            </div>
-            <div>
-                <label for="username">Kullanıcı Adı</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <label for="license-key">Lisans Anahtarı</label>
-                <input type="text" id="license-key" name="license-key" required>
-            </div>
-            <div>
-                <label for="username">Kullanıcı Adı</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <label for="username">Kullanıcı Adı</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <button class="form-btn" onclick="openModal()">Kaydet</button>
-                                  
-                <button class="formvazgec-btn" onclick="openModal()">Vazgeç</button>
-            </div>
-          
-            </form>
-        </div>
-    </div>
-    <div id="modaltable" class="modal">
-        <div class="modal-content">
-            <div class="modalbasligi">
-                <p>Proje Detayları</p>
-            <span class="close" onclick="yoneticicloseModal()">&times;</span>
-            
-        </div>
-        <input type="text" placeholder="Filter..." style="width: 80%; padding: 8px;margin-left: 5%;
-       
-        margin-top: 3%;
-        margin-bottom: 3%;">
+        <main b-y5krlka80t class="main-content">
+           
+
+
+
+
+<h3 class="text-primary"><img src="/images/mavibox.svg"> Envanteri</h3>
+<h4 class="ml-2 text-primary">Kullanıcı Yönetimi</h4>
+<section class="content">
+
+    <div class="tablenew" id="data-table">
+
         <table>
-            <tbody>
-                <tr class="nested-list-item">
-                    <td><input type="checkbox"> InnosaWAPI</td>
-                </tr>
+            <thead>
                 <tr>
-                    <td><input type="checkbox"> DisServislerWAPI</td>
+                    <th></th>
+                    <th>Id</th>
+                    <th>Kurum Id</th>
+                    <th>Kullanıcı Adı</th>
+                    <th>Active Dir</th>
+                    <th>Aktif/Pasif</th>
+                    <th>KayitTarihi</th>
+
                 </tr>
-                <tr class="nested-list-item">
-                    <td>
-                        <input type="checkbox"> TeknomartWAPIController
-                        <ul style="list-style-type:none; padding-left: 20px;">
-                            <li><input type="checkbox"> GetContactListGroups</li>
-                            <ul style="list-style-type:none; padding-left: 20px;">
-                                <li><input type="checkbox"> GetContactListGroups</li>
-                                <li><input type="checkbox"> SmsCreate</li>
-                            </ul>
-                            <li><input type="checkbox"> SmsCreate</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr class="nested-list-item">
-                    <td><input type="checkbox"> PakoWAPIController</td>
-                </tr>
-                <tr class="nested-list-item">
-                    <td><input type="checkbox"> InnosaWaHimWAPIController</td>
-                </tr>
-                <tr class="nested-list-item">
-                    <td><input type="checkbox"> ExWAPIController</td>
-                </tr>
-                <!-- Add more rows as needed -->
+            </thead>
+            <tbody>
+                    <tr class="expandable">
+                        <td class="pointervarmi">></td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>innosa.wapi.usr</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>24.03.2024 15:47:09</td>
+                
+                    </tr>
+                    <tr class="expandable">
+                        <td class="pointervarmi">></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>yazilim.wapi.usr</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>24.03.2024 15:45:32</td>
+                
+                    </tr>
+                    <tr class="expandable">
+                        <td class="pointervarmi">></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>iztek.wapi.usr</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>24.03.2024 15:46:12</td>
+                
+                    </tr>
+                    <tr class="expandable">
+                        <td class="pointervarmi">></td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>eshot.wapi.usr</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>12.06.2024 12:00:24</td>
+                
+                    </tr>
+                    <tr class="expandable">
+                        <td class="pointervarmi">></td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>onder_aycan</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>11.07.2024 15:28:46</td>
+                
+                    </tr>
+               
+
+             
+            </tbody>
+        </table>
+    </div>
+</section>
+<div id="modaltable" class="modal">
+    <div class="modal-newcontent">
+        <div class="modalbasligi">
+            <p>Lisans Anahtarı Yetki Düzenle</p>
+            <span class="close" onclick="yoneticicloseModal()">&times;</span>
+        </div>
+        <div class="divicerigi">
+        <table>
+            <tbody id="data-table-yoneticibody">
+              
             </tbody>
         </table>
         </div>
+        <div class="ml-50 mb-1" >
+                <button class="detail-btn" onclick="sendChangedItems()">Kaydet</button>
+        </div>
+       
     </div>
-    <script src="/styles/script.js"></script>
-</body>
-</html>
+    </div>
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modalbasligi">
+                <p>Mesaj İçeriği</p>
+                <span class="close" onclick="successcloseModal()">&times;</span>
+
+            </div>
+            <div class="p-5 textcenterb">
+                Yetki Başarıyla Düzenlendi.
+            </div>
+
+        </div>
+    </div>
+    <div id="unsuccessModal" class="modal">
+        <div class="modal-content">
+            <div class="modalbasligi">
+                <p>Yetki Düzenlemesi Başarısız Oldu</p>
+                <span class="close" onclick="unsuccesscloseModal()">&times;</span>
+
+            </div>
+
+        </div>
+    </div>
+
+   
+        </main>
+    </div>
+
+    <script src="/styles/script.js"></script></body>

@@ -24,7 +24,7 @@ body {
     .profile {
       text-align: center;
       padding: 20px;
-      border-bottom: 1px solid $profil-border-color;
+
   
       img {
         width: 80px;
@@ -34,6 +34,7 @@ body {
   
       h3 {
         margin: 10px 0 0 0;
+        color:$button-primary-color;
       }
     }
   
@@ -46,21 +47,21 @@ body {
   
         li {
           padding: 1px 20px;
-          border-bottom: 1px solid $profil-border-color;
+       
   
           &.active,
           &:hover {
-            background-color: $button-warning-bg;
+            background-color: rgba(254, 254, 254, 1);
           }
   
           &.active a,
           &:hover a {
-            color: $anasayfa-bodydark;
+            color: $button-primary-bg;
           }
   
           a {
             text-decoration: none;
-            color: #333;
+            color: rgba(254, 254, 254, 1);
             display: flex;
             align-items: center;
   
@@ -78,10 +79,10 @@ body {
     padding: 20px;
     background: $anasayfa-bodydark;
     h3{
-        color: $button-warning-bg;
+        color: $button-primary-color;
       }
       h4{
-        color: $button-warning-bg;
+        color: $button-primary-color;
       }
   }
   
@@ -89,13 +90,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $anasayfa-bodydark;
+    background: $anasyafa-sidebardark;
 
   
     .title {
       display: flex;
       align-items: center;
-      color: $button-warning-bg;
+      color: $button-primary-color;
   
       img {
         margin-right: 10px;
@@ -184,7 +185,7 @@ body {
       .title {
         width: 15%;
         background: $anasyafa-sidebardark;
-        color: $button-warning-bg;
+        color: $button-primary-color;
       }
     }
   }

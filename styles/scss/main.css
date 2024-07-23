@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -48,7 +49,7 @@ body {
   background-color: rgb(40, 152, 236);
 }
 .sidebar .nav ul li.active a, .sidebar .nav ul li:hover a {
-  color: #fff;
+  color: rgb(254, 254, 254);
 }
 .sidebar .nav ul li a {
   text-decoration: none;
@@ -63,7 +64,7 @@ body {
 .main-content {
   flex-grow: 1;
   padding: 20px;
-  background: #fff;
+  background: rgb(254, 254, 254);
 }
 .main-content h3 {
   color: rgb(40, 152, 236);
@@ -76,7 +77,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background: rgb(254, 254, 254);
 }
 .header .title {
   display: flex;
@@ -160,7 +161,7 @@ body {
 }
 .treeview {
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(254, 254, 254);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px;
@@ -197,7 +198,7 @@ body {
 }
 .table {
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(254, 254, 254);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   display: none;
@@ -216,12 +217,18 @@ body {
 }
 .table table th {
   background: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
+}
+.table table tr:nth-child(odd) {
+  background-color: rgb(242, 246, 250); /* Birinci ve üçüncü satır rengi */
+}
+.table table tr:nth-child(even) {
+  background-color: rgb(254, 254, 254); /* İkinci ve dördüncü satır rengi */
 }
 
 .tablenew {
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(254, 254, 254);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   overflow-x: auto;
@@ -239,7 +246,7 @@ body {
 }
 .tablenew table th {
   background: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
 }
 
 .hidden {
@@ -280,14 +287,14 @@ span.newtoggle {
   display: flex;
   background-color: rgb(40, 152, 236);
   width: 100%;
-  color: #fff;
+  color: rgb(254, 254, 254);
 }
 .modal-content .modalbasligi p {
   width: 50%;
   margin-left: 40%;
 }
 .modal-content .close {
-  color: #fff;
+  color: rgb(254, 254, 254);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -331,7 +338,7 @@ span.newtoggle {
 .modal-content .bform input[type=submit],
 .modal-content .yeniform input[type=submit] {
   background-color: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -368,7 +375,7 @@ span.newtoggle {
   display: flex;
   background-color: rgb(40, 152, 236);
   width: 100%;
-  color: #fff;
+  color: rgb(254, 254, 254);
 }
 .modal-newcontent .modalbasligi p {
   width: 50%;
@@ -379,7 +386,7 @@ span.newtoggle {
   overflow-y: auto;
 }
 .modal-newcontent .close {
-  color: #fff;
+  color: rgb(254, 254, 254);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -423,7 +430,7 @@ span.newtoggle {
 .modal-newcontent .bform input[type=submit],
 .modal-newcontent .yeniform input[type=submit] {
   background-color: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -484,7 +491,7 @@ span.newtoggle {
   top: 5px;
   right: 5px;
   background: #dc3545;
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -509,7 +516,7 @@ span.newtoggle {
 }
 .eklemeform input[type=submit] {
   background-color: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -520,7 +527,7 @@ span.newtoggle {
 
 .uploadbtn {
   background: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -538,7 +545,7 @@ span.newtoggle {
 
 .detail-btn {
   background: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -546,7 +553,7 @@ span.newtoggle {
 
 .detailnew-btn {
   background: #dc3545;
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -554,7 +561,7 @@ span.newtoggle {
 
 .detailekle-btn {
   background: green;
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -562,7 +569,7 @@ span.newtoggle {
 
 .form-btn {
   background: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   padding: 3%;
   cursor: pointer;
@@ -571,7 +578,7 @@ span.newtoggle {
 
 .formvazgec-btn {
   background: #dc3545;
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   padding: 3%;
   cursor: pointer;
@@ -636,7 +643,7 @@ span.newtoggle {
   display: flex;
   background-color: rgb(40, 152, 236);
   width: 100%;
-  color: #fff;
+  color: rgb(254, 254, 254);
 }
 .duzenlememodali-content .modalbasligi p {
   width: 50%;
@@ -645,7 +652,7 @@ span.newtoggle {
 .duzenlememodali-content .modalaltbasligi {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: rgb(254, 254, 254);
   width: 100%;
   color: rgb(40, 152, 236);
 }
@@ -667,7 +674,7 @@ span.newtoggle {
 }
 .duzenlememodali-content .modalaltbasligi table th {
   background-color: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
 }
 .duzenlememodali-content .user-info {
   width: 30%;
@@ -706,7 +713,7 @@ span.newtoggle {
   border-radius: 5px;
 }
 .duzenlememodali-content .close {
-  color: #fff;
+  color: rgb(254, 254, 254);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -754,7 +761,7 @@ span.newtoggle {
   display: flex;
   background-color: rgb(40, 152, 236);
   width: 100%;
-  color: #fff;
+  color: rgb(254, 254, 254);
 }
 .detaymodali-content .modalbasligi p {
   width: 50%;
@@ -763,7 +770,7 @@ span.newtoggle {
 .detaymodali-content .modalaltbasligi {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: rgb(254, 254, 254);
   width: 100%;
   color: rgb(40, 152, 236);
 }
@@ -789,7 +796,7 @@ span.newtoggle {
 }
 .detaymodali-content .modalaltbasligi table th {
   background-color: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
 }
 .detaymodali-content .user-info {
   width: 30%;
@@ -828,7 +835,7 @@ span.newtoggle {
   border-radius: 5px;
 }
 .detaymodali-content .close {
-  color: #fff;
+  color: rgb(254, 254, 254);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -854,14 +861,14 @@ span.newtoggle {
 }
 .detail-btn {
   background: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   cursor: pointer;
 }
 
 .detailnew-btn {
   background: #dc3545;
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -869,7 +876,7 @@ span.newtoggle {
 
 .detailekle-btn {
   background: #23cf51;
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   padding: 8px;
   cursor: pointer;
@@ -878,28 +885,28 @@ span.newtoggle {
 
 .form-btn {
   background: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   cursor: pointer;
 }
 
 .formvazgec-btn {
   background: #dc3545;
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   cursor: pointer;
 }
 
 .formsil-btn {
   background: #dc3545;
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   cursor: pointer;
 }
 
 .detayonayla-btn {
   background: rgb(40, 152, 236);
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   width: 80%;
   cursor: pointer;
@@ -908,7 +915,7 @@ span.newtoggle {
 
 .detayvazgec-btn {
   background: #dc3545;
-  color: #fff;
+  color: rgb(254, 254, 254);
   border: none;
   width: 80%;
   cursor: pointer;
@@ -924,7 +931,7 @@ span.newtoggle {
 .button {
   display: inline-block;
   font-weight: 400;
-  color: #fff;
+  color: rgb(254, 254, 254);
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;

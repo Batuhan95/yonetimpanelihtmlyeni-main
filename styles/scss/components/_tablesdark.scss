@@ -15,20 +15,31 @@
       td {
         padding: 10px;
         text-align: left;
-        border-bottom: 1px solid $profil-border-color;
-        color: $button-warning-bg;
+        
+        color: $button-primary-color;
+        
       }
+      td:not(:last-child) {
+        border-right: $border-sag;
+    }
   
       th {
-        background: $button-warning-bg;
+        background: $anasyafa-sidebardark;
         color: $button-primary-color;
       }
+      tr:nth-child(odd) {
+        background-color: $anasayfa-bodydark; /* Birinci ve üçüncü satır rengi */
+    }
+
+    tr:nth-child(even) {
+        background-color: $anasyafa-sidebardark; /* İkinci ve dördüncü satır rengi */
+    }
     }
   }
   
   .tablenew {
     width: 100%;
-    background-color: $button-primary-color;
+    background-color: $anasayfa-bodydark;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     overflow-x: auto;
@@ -41,13 +52,20 @@
       td {
         padding: 10px;
         text-align: left;
-        border-bottom: 1px solid $profil-border-color;
-        color: $button-warning-bg;
+        border-bottom: 1px solid $button-primary-color;
+        color: $button-primary-color;
       }
   
       th {
-        background: $button-warning-bg;
+        background: $anasyafa-sidebardark;
         color: $button-primary-color;
       }
+      tr:nth-child(odd) {
+        background-color: $anasayfa-bodydark; /* Birinci ve üçüncü satır rengi */
+    }
+
+    tr:nth-child(even) {
+        background-color: $anasyafa-sidebardark; /* İkinci ve dördüncü satır rengi */
+    }
     }
   }

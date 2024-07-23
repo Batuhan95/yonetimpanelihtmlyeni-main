@@ -23,6 +23,13 @@
         background: $button-secondary-bg;
         color: $button-primary-color;
       }
+      tr:nth-child(odd) {
+        background-color: $table-light-odd; /* Birinci ve üçüncü satır rengi */
+    }
+
+    tr:nth-child(even) {
+        background-color: $table-light-even; /* İkinci ve dördüncü satır rengi */
+    }
     }
   }
   
