@@ -1,26 +1,48 @@
 @import "../abstract/variables";
 .treeview {
-    width: 100%;
-    background-color: $anasyafa-sidebardark;
-    box-shadow: 0 0 10px $anasayfa-bodydark;
-    padding: 20px;
-    margin-bottom: 20px;
-  
-    ul {
-      list-style: none;
-      padding: 0;
-  
-      li {
-        padding: 5px 0;
-        color: $button-primary-color;
-  
-        ul {
-          padding-left: 20px;
+  width: 100%;
+  background-color: $anasyafa-sidebardark;
+  box-shadow: 0 0 10px $anasayfa-bodydark;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    > li {
+      padding: 5px 0;
+      color: $button-primary-color;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: lighten($anasyafa-sidebardark, 10%);
+      }
+
+      &:nth-child(odd)  {
+        background-color: $anasayfa-bodydark; // İlk li öğesinin arka plan rengi
+      }
+
+      &:nth-child(even)  {
+        background-color: $anasyafa-sidebardark; // Sonraki tüm li öğelerinin arka plan rengi
+      }
+
+      ul {
+        padding-left: 20px;
+
+        li {
+          background-color: transparent!important; // İç içe geçmiş ul içindeki li öğelerinin arka plan rengi şeffaf
+
+          &:nth-child(odd),
+          &:nth-child(even)  {
+            background-color: transparent!important; // İç içe geçmiş ul içindeki li öğelerinin arka plan rengini şeffaf olarak ayarlama
+          }
         }
       }
     }
-    
   }
+}
   @media (min-width: 768px) {
 
   

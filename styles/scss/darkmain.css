@@ -170,12 +170,28 @@ body {
   list-style: none;
   padding: 0;
 }
-.treeview ul li {
+.treeview ul > li {
   padding: 5px 0;
   color: rgb(254, 254, 254);
+  cursor: pointer;
 }
-.treeview ul li ul {
+.treeview ul > li:hover, .treeview ul > li:focus {
+  background-color: #28364f;
+}
+.treeview ul > li:nth-child(odd) {
+  background-color: rgb(13, 20, 32);
+}
+.treeview ul > li:nth-child(even) {
+  background-color: rgb(23, 31, 45);
+}
+.treeview ul > li ul {
   padding-left: 20px;
+}
+.treeview ul > li ul li {
+  background-color: transparent !important;
+}
+.treeview ul > li ul li:nth-child(odd), .treeview ul > li ul li:nth-child(even) {
+  background-color: transparent !important;
 }
 
 @media (min-width: 768px) {
@@ -285,7 +301,7 @@ span.newtoggle {
 }
 .modal-content .bform input[type=submit],
 .modal-content .yeniform input[type=submit] {
-  background-color: #ffc107;
+  background-color: rgb(40, 152, 236);
   color: rgb(254, 254, 254);
   border: none;
   border-radius: 5px;
@@ -312,9 +328,8 @@ span.newtoggle {
   width: 10%;
 }
 .modal-newcontent {
-  background-color: #fefefe;
+  background-color: rgb(13, 20, 32);
   margin: 5% auto;
-  border: 1px solid #888;
   width: 80%;
   max-width: 800px;
   border-radius: 10px;
@@ -332,6 +347,7 @@ span.newtoggle {
 .modal-newcontent .divicerigi {
   max-height: 700px;
   overflow-y: auto;
+  color: rgb(254, 254, 254);
 }
 .modal-newcontent .close {
   color: rgb(254, 254, 254);
@@ -377,7 +393,7 @@ span.newtoggle {
 }
 .modal-newcontent .bform input[type=submit],
 .modal-newcontent .yeniform input[type=submit] {
-  background-color: #ffc107;
+  background-color: rgb(40, 152, 236);
   color: rgb(254, 254, 254);
   border: none;
   border-radius: 5px;
@@ -474,7 +490,7 @@ span.newtoggle {
 }
 
 .uploadbtn {
-  background: #ffc107;
+  background: rgb(40, 152, 236);
   color: rgb(254, 254, 254);
   border: none;
   padding: 10px;
@@ -492,7 +508,7 @@ span.newtoggle {
 }
 
 .detail-btn {
-  background: #ffc107;
+  background: rgb(40, 152, 236);
   color: rgb(254, 254, 254);
   border: none;
   padding: 10px;
@@ -516,7 +532,7 @@ span.newtoggle {
 }
 
 .form-btn {
-  background: #ffc107;
+  background: rgb(40, 152, 236);
   color: rgb(254, 254, 254);
   border: none;
   padding: 3%;
@@ -1016,7 +1032,7 @@ span.newtoggle {
 }
 
 .detail-btn {
-  background: #ffc107;
+  background: rgb(40, 152, 236);
   color: rgb(254, 254, 254);
   border: none;
   cursor: pointer;
@@ -1040,7 +1056,7 @@ span.newtoggle {
 }
 
 .form-btn {
-  background: #ffc107;
+  background: rgb(40, 152, 236);
   color: rgb(254, 254, 254);
   border: none;
   cursor: pointer;
@@ -1061,7 +1077,7 @@ span.newtoggle {
 }
 
 .detayonayla-btn {
-  background: #ffc107;
+  background: rgb(40, 152, 236);
   color: rgb(254, 254, 254);
   border: none;
   width: 80%;
