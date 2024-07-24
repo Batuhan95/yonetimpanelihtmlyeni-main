@@ -37,7 +37,6 @@
     width: 100%;
     background-color: $button-primary-color;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     overflow-x: auto;
   
     table {
@@ -58,3 +57,13 @@
       }
     }
   }
+  .trodd {
+    background-color: $table-light-odd; /* Birinci ve üçüncü satır rengi */
+}
+
+.treven {
+    background-color: $table-light-even; /* İkinci ve dördüncü satır rengi */
+}
+.alttableshadow{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
