@@ -127,8 +127,7 @@ body {
   background: transparent;
 }
 .header .search button img {
-  width: 20px;
-  height: 20px;
+  height: 30px;
 }
 
 .content {
