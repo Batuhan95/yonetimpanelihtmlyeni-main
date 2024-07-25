@@ -332,8 +332,8 @@
 
 
   .detail-btn {
-    background: $button-primary-bg;
-    color: $button-primary-color;
+    background: $button-primary-color;
+    color: $button-primary-bg;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -356,8 +356,8 @@
   }
   
   .form-btn {
-    background: $button-primary-bg;
-    color: $button-primary-color;
+    background: $button-primary-color;
+    color: $button-primary-bg;
     border: none;
     padding: $uzunluk-3;
     cursor: pointer;

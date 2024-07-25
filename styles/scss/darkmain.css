@@ -72,6 +72,20 @@ body {
   color: rgb(254, 254, 254);
 }
 
+.search-container {
+  border: 1px solid rgb(254, 254, 254);
+  border-radius: 5px;
+  display: flex;
+}
+.search-container input {
+  border: none;
+  color: rgb(254, 254, 254);
+  background-color: transparent;
+}
+.search-container input:focus {
+  outline: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -91,24 +105,31 @@ body {
   align-items: center;
   margin-right: 5%;
 }
-.header .search input {
-  padding: 10px;
-  border: 1px solid #ccc;
+.header .search div {
   border-radius: 10px;
+  border: 1px solid rgb(254, 254, 254);
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.header .search div input {
+  border: none;
+  background: transparent;
+  color: rgb(254, 254, 254);
+  padding: 10px;
+}
+.header .search div input:focus {
   outline: none;
-  margin-right: 10px;
 }
 .header .search button {
   padding: 10px;
-  border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
   border: none;
   background: transparent;
 }
 .header .search button img {
-  width: 20px;
-  height: 20px;
+  height: 30px;
 }
 
 .content {
@@ -508,8 +529,8 @@ span.newtoggle {
 }
 
 .detail-btn {
-  background: rgb(40, 152, 236);
-  color: rgb(254, 254, 254);
+  background: rgb(254, 254, 254);
+  color: rgb(40, 152, 236);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -532,8 +553,8 @@ span.newtoggle {
 }
 
 .form-btn {
-  background: rgb(40, 152, 236);
-  color: rgb(254, 254, 254);
+  background: rgb(254, 254, 254);
+  color: rgb(40, 152, 236);
   border: none;
   padding: 3%;
   cursor: pointer;
@@ -870,7 +891,7 @@ span.newtoggle {
 .tablenew table td {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid rgb(254, 254, 254);
+  border: none;
   color: rgb(254, 254, 254);
 }
 .tablenew table th {
@@ -930,6 +951,14 @@ span.newtoggle {
 
 .textrightb {
   text-align: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal-size {
+  font-weight: normal;
 }
 
 .button {
@@ -1032,8 +1061,8 @@ span.newtoggle {
 }
 
 .detail-btn {
-  background: rgb(40, 152, 236);
-  color: rgb(254, 254, 254);
+  background: rgb(254, 254, 254);
+  color: rgb(40, 152, 236);
   border: none;
   cursor: pointer;
 }
@@ -1056,8 +1085,8 @@ span.newtoggle {
 }
 
 .form-btn {
-  background: rgb(40, 152, 236);
-  color: rgb(254, 254, 254);
+  background: rgb(254, 254, 254);
+  color: rgb(40, 152, 236);
   border: none;
   cursor: pointer;
 }
@@ -1077,8 +1106,8 @@ span.newtoggle {
 }
 
 .detayonayla-btn {
-  background: rgb(40, 152, 236);
-  color: rgb(254, 254, 254);
+  background: rgb(254, 254, 254);
+  color: rgb(40, 152, 236);
   border: none;
   width: 80%;
   cursor: pointer;
@@ -1938,4 +1967,69 @@ span.newtoggle {
 
 .w-100 {
   width: 100% !important;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  height: 34px;
+}
+
+.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-label {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(254, 254, 254);
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.switch-label::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 10px;
+  bottom: 4px;
+  background-color: #2898EC;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.switch-input:checked + .switch-label {
+  background-color: #2898EC;
+}
+
+.switch-input:checked + .switch-label::before {
+  transform: translateX(26px);
+  background-color: rgb(254, 254, 254);
+}
+
+.switch-icon {
+  font-size: 18px;
+}
+
+.sun {
+  height: 30px;
+}
+.sun img {
+  height: 30px;
+}
+
+.moon {
+  height: 30px;
+}
+.moon img {
+  height: 28px;
 }/*# sourceMappingURL=darkmain.css.map */

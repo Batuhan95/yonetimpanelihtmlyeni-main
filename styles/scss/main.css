@@ -197,6 +197,41 @@ body {
   padding-left: 20px;
 }
 
+.treeview {
+  width: 100%;
+  background-color: rgb(254, 254, 254);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.treeview ul {
+  list-style: none;
+  padding: 0;
+}
+.treeview ul > li {
+  padding: 5px 0;
+  color: rgb(40, 152, 236);
+  cursor: pointer;
+}
+.treeview ul > li:hover, .treeview ul > li:focus {
+  background-color: #57aef0;
+}
+.treeview ul > li:nth-child(odd) {
+  background-color: rgb(242, 246, 250);
+}
+.treeview ul > li:nth-child(even) {
+  background-color: rgb(254, 254, 254);
+}
+.treeview ul > li ul {
+  padding-left: 20px;
+}
+.treeview ul > li ul li {
+  background-color: transparent !important;
+}
+.treeview ul > li ul li:nth-child(odd), .treeview ul > li ul li:nth-child(even) {
+  background-color: transparent !important;
+}
+
 @media (min-width: 768px) {
   .treeview {
     width: 30%;
@@ -1865,6 +1900,14 @@ span.newtoggle {
   text-align: right;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.normal-size {
+  font-weight: normal;
+}
+
 .w-5 {
   width: 5% !important;
 }
@@ -1952,7 +1995,6 @@ span.newtoggle {
 
 .switch {
   position: relative;
-  width: 60px;
   height: 34px;
 }
 
@@ -1967,7 +2009,7 @@ span.newtoggle {
   cursor: pointer;
   width: 100%;
   height: 100%;
-  background-color: #ccc;
+  background-color: rgb(254, 254, 254);
   border-radius: 34px;
   transition: 0.4s;
 }
@@ -1977,24 +2019,24 @@ span.newtoggle {
   content: "";
   height: 26px;
   width: 26px;
-  left: 4px;
+  left: 10px;
   bottom: 4px;
-  background-color: white;
+  background-color: #2898EC;
   border-radius: 50%;
   transition: 0.4s;
 }
 
 .switch-input:checked + .switch-label {
-  background-color: #2196F3;
+  background-color: #2898EC;
 }
 
 .switch-input:checked + .switch-label::before {
   transform: translateX(26px);
+  background-color: rgb(254, 254, 254);
 }
 
 .switch-icon {
   font-size: 18px;
-  color: white;
 }
 
 .sun {

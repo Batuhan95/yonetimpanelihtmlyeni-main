@@ -1,7 +1,7 @@
 @import "../abstract/variables";
 .detail-btn {
-  background: $button-primary-bg;
-  color: $button-primary-color;
+  background: $button-primary-color;
+  color: $button-primary-bg;
   border: none;
 
   cursor: pointer;
@@ -27,8 +27,8 @@
 }
 
 .form-btn {
-  background: $button-primary-bg;
-  color: $button-primary-color;
+  background: $button-primary-color;
+  color: $button-primary-bg;
   border: none;
   cursor: pointer;
 
@@ -52,8 +52,8 @@
 
 }
 .detayonayla-btn {
-  background: $button-primary-bg;
-  color: $button-primary-color;
+  background: $button-primary-color;
+  color: $button-primary-bg;
   border: none;
   width: 80%;
   cursor: pointer;

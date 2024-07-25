@@ -7,19 +7,25 @@
     <link id="theme-link" rel="stylesheet" href="/styles/scss/main.css">
 </head>
 <body>
-    <div class="yeni">     <header class="header pt-4">
+    <div class="yeni">     
+        <header class="header pt-4">
         <div class="title">
          
             <div><img id="logoimg" src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
         </div>
         <div class="search">
-            <div class="w-35">
-              <img src="/images/search-normal.svg" alt="Search Icon">
+            <div class="w-40">
+              <img class="ml-2" id="anarama" src="/images/search-normal.svg" alt="Search Icon">
               <input class="w-70" type="text" placeholder="Ara">
             </div>
-            <button class="ml-20"><img src="/images/logout.svg" alt="Logout"></button>
+            <button class="ml-20"><img id="logoutgiris" src="/images/logout.svg" alt="Logout"></button>
         
-          </div></div>
+          </div>
+
+        
+        </div>
+   
+    </header>
     <div class="container">
         
         <aside class="sidebar">
@@ -36,12 +42,12 @@
                 </ul>
             </nav>
             <div class="switch-container ml-10">
-                <span class="switch-icon sun"><img src="/images/sun.svg"/></span>
-                <div class="switch">
+                <span class="switch-icon sun"><img id="sun" src="/images/sun.svg"/></span>
+                <div class="switch w-30">
                   <input onclick="switchTheme()" type="checkbox" id="switch" class="switch-input">
                   <label for="switch" class="switch-label"></label>
                 </div>
-                <span class="switch-icon moon ml-5"><img  src="/images/moon.svg"/></span>
+                <span class="switch-icon moon ml-5"><img id="moon" src="/images/moon.svg"/></span>
               </div>
         </aside>
         <main class="main-content">
@@ -51,7 +57,7 @@
             <section class="content">
                 <div class="treeview">
                     <div  class="search-container ml-20 w-40">
-                        <img class="ml-1" src="/images/search-normal.svg">
+                        <img id="altarama" class="ml-1" src="/images/search-normal.svg">
                         <input class="w-70" type="text" placeholder="Ara" id="search-input">
                     </div>
                     <ul>

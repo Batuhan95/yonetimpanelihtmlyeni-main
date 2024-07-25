@@ -1,4 +1,5 @@
 @import "../abstract/variables";
+@import "../abstract/variables";
 .switch-container {
     display: flex;
     align-items: center;
@@ -31,7 +32,7 @@
     content: "";
     height: 26px;
     width: 26px;
-    left: 10px;
+    left: 4px;
     bottom: 4px;
     background-color: $switch-primary;
     border-radius: 50%;
@@ -44,13 +45,12 @@
   
   .switch-input:checked + .switch-label::before {
     transform: translateX(26px);
-    background-color: $button-primary-color;
   }
   
   .switch-icon {
     font-size: 18px;
   
-    
+    color: white;
   }
   
   .sun {

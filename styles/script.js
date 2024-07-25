@@ -40,9 +40,42 @@ function switchTheme() {
 
     const envanter = document.getElementById('envanterrengi');
     const newEnvanterSrc = currentTheme === '/styles/scss/main.css' ? '/images/whiteenvanter.svg' : '/images/mavibox.svg';
-    console.log(newEnvanterSrc);
+  
   
     envanter.setAttribute('src', newEnvanterSrc);
+
+    const logout = document.getElementById('logoutgiris');
+    const newlogoutSrc = currentTheme === '/styles/scss/main.css' ? '/images/whitelogout.svg' : '/images/logout.svg';
+  
+  
+    logout.setAttribute('src', newlogoutSrc);
+
+    const anaarama = document.getElementById('anarama');
+    const newAnaAramaSrc = currentTheme === '/styles/scss/main.css' ? '/images/whitesearch-normal.svg' : '/images/search-normal.svg';
+  
+  
+    anaarama.setAttribute('src', newAnaAramaSrc);
+
+    const altarama = document.getElementById('altarama');
+    const newAltaramaSrc = currentTheme === '/styles/scss/main.css' ? '/images/whitesearch-normal.svg' : '/images/search-normal.svg';
+  
+  
+    altarama.setAttribute('src', newAltaramaSrc);
+
+    const sun = document.getElementById('sun');
+    const newSunSrc = currentTheme === '/styles/scss/main.css' ? '/images/whitesun.svg' : '/images/sun.svg';
+  
+  
+    sun.setAttribute('src', newSunSrc);
+
+    const moon = document.getElementById('moon');
+    const newMoonSrc = currentTheme === '/styles/scss/main.css' ? '/images/whitemoon.svg' : '/images/moon.svg';
+  
+  
+    moon.setAttribute('src', newMoonSrc);
+
+
+    
 
     toggleIcons.forEach(function(icon) {
         if (currentTheme === '/styles/scss/main.css') {
