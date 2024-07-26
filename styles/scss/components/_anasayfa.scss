@@ -17,9 +17,11 @@ body {
     width: 100%;
     background: $anasyafa-sidebar;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: auto;
+  
     display: flex;
     flex-direction: column;
+    position: fixed;
+    min-height: 100%;
   
     .profile {
       text-align: center;
@@ -76,6 +78,7 @@ body {
   .main-content {
     flex-grow: 1;
     padding: 20px;
+    margin-left: 15%;
     background: $button-primary-color;
     h3{
       color: $button-secondary-bg;
@@ -107,6 +110,7 @@ body {
     .title {
       display: flex;
       align-items: center;
+      position: fixed;
   
       img {
         margin-right: 10px;
@@ -117,6 +121,10 @@ body {
       display: flex;
       align-items: center;
       margin-right: 5%;
+      margin-left: 85%;
+      p{
+        display: none;
+      }
       
       div {
         border-radius: 10px;
@@ -124,6 +132,7 @@ body {
         display: flex;
         align-items: center; // Ensure alignment of child elements
         padding-right: 10px; // Add padding to prevent input overlap
+        width: 40%;
     
         input { 
           border: none;
@@ -142,6 +151,21 @@ body {
         outline: none;
         border: none;
         background: transparent;
+        margin-left: 20%;
+    
+        img {
+       
+          height: 30px;
+        }
+      }
+      .hamburger {
+        padding: 10px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: transparent;
+       
+        display: none;
     
         img {
        
@@ -217,6 +241,68 @@ body {
         display: none;
       }
     }
+    .sidebar{
+      display: none;
+    }
+    .main-content{ 
+      margin-left: 0px;
+    }
+    .header{
+    .search{
+      margin-left: 15%;
+      p{
+        display: block;
+      }
+      
+      div {
+        border-radius: 10px;
+        border: 1px solid $button-primary-bg;
+        display: flex;
+        align-items: center; 
+        padding-right: 10px; 
+        width: 40%;
+    
+        input { 
+          border: none;
+          color: $button-primary-bg;
+          padding: 10px; 
+        }
+    
+        input:focus {
+          outline: none;
+        }
+      }
+    
+      button {
+        padding: 10px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: transparent;
+        margin-left: 5%;
+    
+        img {
+       
+          height: 30px;
+        }
+      }
+      .hamburger {
+        padding: 10px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: transparent;
+       
+        display: block;
+    
+        img {
+       
+          height: 30px;
+        }
+      }
+    
+    }
+  }
   
   
   }

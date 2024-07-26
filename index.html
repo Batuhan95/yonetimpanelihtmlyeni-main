@@ -9,16 +9,18 @@
 <body>
     <div class="yeni">     
         <header class="header pt-4">
-        <div class="title">
+        <div class="title" id="yonetimlogosu">
          
-            <div><img id="logoimg" src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
+            <div id="ustlogo"><img id="logoimg" src="/images/code-circle.svg"><p>Yazılım Yönetimi</p></div>
         </div>
-        <div class="search">
-            <div class="w-40">
+        <div class="search ">
+            <p>Yazılım Yönetimi</p>
+            <div>
               <img class="ml-2" id="anarama" src="/images/search-normal.svg" alt="Search Icon">
               <input class="w-70" type="text" placeholder="Ara">
             </div>
-            <button class="ml-20"><img id="logoutgiris" src="/images/logout.svg" alt="Logout"></button>
+            <button><img id="logoutgiris" src="/images/logout.svg" alt="Logout"></button>
+            <button type="button" class="hamburger" onclick="opensidebar()"><img id="logoutgiris" src="/images/Hamburger.svg" alt="Logout"></button>
         
           </div>
 
@@ -28,7 +30,7 @@
     </header>
     <div class="container">
         
-        <aside class="sidebar">
+        <aside class="sidebar" id="leftbar">
             <div class="profile">
                 <img src="/images/worker1.svg" alt="Profile Picture">
                 <h3>Fırat ÖZKAN</h3>

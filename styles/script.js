@@ -196,3 +196,15 @@ document.querySelectorAll('.nested-list-item').forEach(item => {
         event.stopPropagation();
     });
 });
+function opensidebar(){
+console.log("merhaba");
+    var sidebar=document.getElementById("leftbar");
+    var yonetimsayfasi=document.getElementById("yonetimlogosu");
+    var ustlogo=document.getElementById("ustlogo");
+    sidebar.style.display = "block";
+yonetimsayfasi.style.display = "block";
+yonetimsayfasi.style.width="100%";
+ustlogo.style.display="flex";
+ustlogo.style.width="100%";
+ustlogo.style.background="rgb(242, 246, 250)";
+}

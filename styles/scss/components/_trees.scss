@@ -1,25 +1,4 @@
-.treeview {
-    width: 100%;
-    background-color: $button-primary-color;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-  
-    ul {
-      list-style: none;
-      padding: 0;
-  
-      li {
-        padding: 5px 0;
-        color: $button-secondary-bg;
-  
-        ul {
-          padding-left: 20px;
-        }
-      }
-    }
-  }
-  @import "../abstract/variables";
+ @import "../abstract/variables";
 .treeview {
   width: 100%;
   background-color: $button-primary-color;
@@ -30,7 +9,8 @@
   ul {
     list-style: none;
     padding: 0;
-
+    overflow-x: auto;
+ 
     > li {
       padding: 5px 0;
       color: $button-secondary-bg;
@@ -87,5 +67,6 @@
       margin-bottom: 0;
       max-height: 300px;
       overflow-y: auto;
+      padding: 10px;
     }
   } 

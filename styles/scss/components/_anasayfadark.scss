@@ -20,6 +20,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
+    position: fixed;
   
     .profile {
       text-align: center;
@@ -111,6 +112,7 @@ body {
       display: flex;
       align-items: center;
       color: $button-primary-color;
+      position: fixed;
   
       img {
         margin-right: 10px;
@@ -222,6 +224,10 @@ body {
         display: none;
       }
     }
+    .sidebar{
+      display: none;
+    }
+  
   
   
   }

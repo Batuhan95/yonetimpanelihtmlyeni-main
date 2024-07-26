@@ -1,6 +1,6 @@
 @import "../abstract/variables";
 .table {
-    width: 100%;
+    width: 70%;
     background-color: $button-primary-color;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -21,7 +21,7 @@
   
       th {
         background: $button-secondary-bg;
-        color: $button-primary-color;
+        color: $button-primary-color; 
       }
       tr:nth-child(odd) {
         background-color: $table-light-odd; /* Birinci ve üçüncü satır rengi */
@@ -67,3 +67,14 @@
 .alttableshadow{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 767px) {
+
+  
+  .table {
+    width: 100%;
+  
+    padding: 10px;
+    margin-top: 10%;
+
+  }
+} 
