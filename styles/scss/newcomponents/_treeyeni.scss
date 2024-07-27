@@ -1,0 +1,68 @@
+@import "../abstract/variables";
+
+.treeview {
+  width: 100%;
+  background-color: var(--button-primary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    overflow-x: auto;
+
+    > li {
+      padding: 5px 0;
+      color: var(--tree-backgroundsecond);
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: lighten(var(--tree-backgroundsecond), 10%);
+      }
+
+      &:nth-child(odd) {
+        background-color: var(--tree-odd); // İlk li öğesinin arka plan rengi
+      }
+
+      &:nth-child(even) {
+        background-color: var(--tree-even); // Sonraki tüm li öğelerinin arka plan rengi
+      }
+
+      ul {
+        padding-left: 20px;
+
+        li {
+          background-color: transparent !important; // İç içe geçmiş ul içindeki li öğelerinin arka plan rengi şeffaf
+
+          &:nth-child(odd),
+          &:nth-child(even) {
+            background-color: transparent !important; // İç içe geçmiş ul içindeki li öğelerinin arka plan rengini şeffaf olarak ayarlama
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .treeview {
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom: 0;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .treeview {
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+}

@@ -17,10 +17,10 @@ body {
   width: 100%;
   background: rgb(23, 31, 45);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: auto;
   display: flex;
   flex-direction: column;
   position: fixed;
+  min-height: 100%;
 }
 .sidebar .profile {
   text-align: center;
@@ -64,6 +64,7 @@ body {
 .main-content {
   flex-grow: 1;
   padding: 20px;
+  margin-left: 15%;
   background: rgb(13, 20, 32);
 }
 .main-content h3 {
@@ -106,6 +107,10 @@ body {
   display: flex;
   align-items: center;
   margin-right: 5%;
+  margin-left: 85%;
+}
+.header .search p {
+  display: none;
 }
 .header .search div {
   border-radius: 10px;
@@ -113,6 +118,7 @@ body {
   display: flex;
   align-items: center;
   padding-right: 10px;
+  width: 40%;
 }
 .header .search div input {
   border: none;
@@ -129,8 +135,20 @@ body {
   outline: none;
   border: none;
   background: transparent;
+  margin-left: 20%;
 }
 .header .search button img {
+  height: 30px;
+}
+.header .search .hamburger {
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  display: none;
+}
+.header .search .hamburger img {
   height: 30px;
 }
 
@@ -184,6 +202,53 @@ body {
   .sidebar {
     display: none;
   }
+  .main-content {
+    margin-left: 0px;
+  }
+  .header .search {
+    margin-left: 15%;
+  }
+  .header .search p {
+    display: block;
+  }
+  .header .search div {
+    border-radius: 10px;
+    border: 1px solid rgb(40, 152, 236);
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    width: 40%;
+  }
+  .header .search div input {
+    border: none;
+    color: rgb(40, 152, 236);
+    padding: 10px;
+  }
+  .header .search div input:focus {
+    outline: none;
+  }
+  .header .search button {
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 5%;
+  }
+  .header .search button img {
+    height: 30px;
+  }
+  .header .search .hamburger {
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    display: block;
+  }
+  .header .search .hamburger img {
+    height: 30px;
+  }
 }
 .treeview {
   width: 100%;
@@ -195,6 +260,7 @@ body {
 .treeview ul {
   list-style: none;
   padding: 0;
+  overflow-x: auto;
 }
 .treeview ul > li {
   padding: 5px 0;

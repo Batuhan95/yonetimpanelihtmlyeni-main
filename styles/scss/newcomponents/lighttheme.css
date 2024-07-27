@@ -1,0 +1,15 @@
+.light-theme {
+  --anasyafa-body: #f4f4f4;
+  --anasyafa-sidebar: rgb(242, 246, 250);
+  --anasyafa-titlebar: rgb(242, 246, 250);
+  --anasyafa-header: transparent;
+  --profil-border-color: #eee;
+  --profile-h-color:black;
+  --active-textcolor: rgb(254, 254, 254);
+  --active-color: rgb(40, 152, 236);
+  --button-primary-bg: rgb(40, 152, 236);
+  --tree-background:$button-primary-color;
+  --tree-backgroundsecond:$button-secondary-bg;
+  --tree-odd:$table-light-odd;
+  --tree-even:$table-light-even;
+}/*# sourceMappingURL=lighttheme.css.map */

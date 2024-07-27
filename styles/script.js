@@ -208,3 +208,14 @@ ustlogo.style.display="flex";
 ustlogo.style.width="100%";
 ustlogo.style.background="rgb(242, 246, 250)";
 }
+
+function temadegisitr() {
+    const body = document.body;
+    if (body.classList.contains('light-theme')) {
+      body.classList.remove('light-theme');
+      body.classList.add('dark-theme');
+    } else {
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+    }
+  };
