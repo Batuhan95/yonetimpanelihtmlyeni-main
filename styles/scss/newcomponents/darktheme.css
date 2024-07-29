@@ -8,4 +8,8 @@
   --active-textcolor:rgb(40, 152, 236) ;
   --active-color: rgb(254, 254, 254);
   --button-primary-bg: transparent;
+  --tree-background:rgb(254, 254, 254);
+  --tree-backgroundsecond:rgb(40, 152, 236);
+  --tree-odd:rgb(242, 246, 250);
+  --tree-even:rgba(254, 254, 254, 1);
 }/*# sourceMappingURL=darktheme.css.map */

@@ -19,7 +19,7 @@
 
       &:hover,
       &:focus {
-        background-color: lighten(var(--tree-backgroundsecond), 10%);
+        background-color: var(--tree-backgroundsecond);
       }
 
       &:nth-child(odd) {

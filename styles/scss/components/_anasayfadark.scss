@@ -26,7 +26,13 @@ body {
     .profile {
       text-align: center;
       padding: 20px;
-   
+    
+      div{
+        p{
+          margin-left: 100%;
+          display: none;
+        }
+      }
   
       img {
         width: 80px;
@@ -36,7 +42,7 @@ body {
   
       h3 {
         margin: 10px 0 0 0;
-        color:$button-primary-color;
+        color: $button-primary-color;
       }
     }
   
@@ -247,6 +253,13 @@ body {
     }
     .sidebar{
       display: none;
+      .profile {
+        div{
+          p{
+            display: block;
+          }
+        }
+      }
     }
     .main-content{ 
       margin-left: 0px;

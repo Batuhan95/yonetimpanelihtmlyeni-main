@@ -27,6 +27,12 @@ body {
       text-align: center;
       padding: 20px;
       border-bottom: 1px solid $profil-border-color;
+      div{
+        p{
+          margin-left: 100%;
+          display: none;
+        }
+      }
   
       img {
         width: 80px;
@@ -243,6 +249,13 @@ body {
     }
     .sidebar{
       display: none;
+      .profile {
+        div{
+          p{
+            display: block;
+          }
+        }
+      }
     }
     .main-content{ 
       margin-left: 0px;

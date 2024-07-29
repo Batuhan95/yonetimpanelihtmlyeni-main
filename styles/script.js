@@ -197,7 +197,7 @@ document.querySelectorAll('.nested-list-item').forEach(item => {
     });
 });
 function opensidebar(){
-console.log("merhaba");
+
     var sidebar=document.getElementById("leftbar");
     var yonetimsayfasi=document.getElementById("yonetimlogosu");
     var ustlogo=document.getElementById("ustlogo");
@@ -207,6 +207,27 @@ yonetimsayfasi.style.width="100%";
 ustlogo.style.display="flex";
 ustlogo.style.width="100%";
 ustlogo.style.background="rgb(242, 246, 250)";
+}
+function closesidebar(){
+
+    var sidebar=document.getElementById("leftbar");
+    var yonetimsayfasi=document.getElementById("yonetimlogosu");
+    var ustlogo=document.getElementById("ustlogo");
+    if (window.innerWidth <= 768) {
+    sidebar.style.display = "none";
+yonetimsayfasi.style.display = "none";
+
+ustlogo.style.display="none";
+    }
+    else{
+        sidebar.style.display = "block";
+        yonetimsayfasi.style.display = "block";
+        yonetimsayfasi.style.width="100%";
+        ustlogo.style.display="flex";
+        ustlogo.style.width="100%";
+        ustlogo.style.background="rgb(242, 246, 250)";
+    }
+
 }
 
 function temadegisitr() {

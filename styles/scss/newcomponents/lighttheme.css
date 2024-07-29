@@ -8,8 +8,11 @@
   --active-textcolor: rgb(254, 254, 254);
   --active-color: rgb(40, 152, 236);
   --button-primary-bg: rgb(40, 152, 236);
-  --tree-background:$button-primary-color;
-  --tree-backgroundsecond:$button-secondary-bg;
-  --tree-odd:$table-light-odd;
-  --tree-even:$table-light-even;
+  --tree-background:rgb(254, 254, 254);
+  --tree-backgroundsecond:rgb(40, 152, 236);
+  --tree-odd:rgb(242, 246, 250);
+  --tree-even:rgba(254, 254, 254, 1);
+  --table-backgroundcolor:rgb(254, 254, 254);
+  --table-boxshadow:rgba(0, 0, 0, 0.1);
+  --table-pcolor:rgb(40, 152, 236);
 }/*# sourceMappingURL=lighttheme.css.map */

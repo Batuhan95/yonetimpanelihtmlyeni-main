@@ -26,6 +26,10 @@ body {
   text-align: center;
   padding: 20px;
 }
+.sidebar .profile div p {
+  margin-left: 100%;
+  display: none;
+}
 .sidebar .profile img {
   width: 80px;
   height: 80px;
@@ -201,6 +205,9 @@ body {
   }
   .sidebar {
     display: none;
+  }
+  .sidebar .profile div p {
+    display: block;
   }
   .main-content {
     margin-left: 0px;
