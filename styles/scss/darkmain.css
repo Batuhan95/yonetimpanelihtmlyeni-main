@@ -162,12 +162,12 @@ body {
   padding: 5%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 831px) {
   .container {
     flex-direction: row;
   }
   .sidebar {
-    width: 250px;
+    width: 15%;
     height: auto;
   }
   .main-content {
@@ -199,7 +199,7 @@ body {
     color: rgb(254, 254, 254);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .header .title {
     display: none;
   }
@@ -293,7 +293,7 @@ body {
   background-color: transparent !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 831px) {
   .treeview {
     width: 30%;
     margin-right: 20px;
@@ -302,7 +302,7 @@ body {
     overflow-y: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 830px) {
   .treeview {
     width: 100%;
     margin-right: 20px;
@@ -983,6 +983,13 @@ span.newtoggle {
   background-color: rgb(23, 31, 45); /* İkinci ve dördüncü satır rengi */
 }
 
+@media (max-width: 830px) {
+  .table {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10%;
+  }
+}
 .font-size-xxs {
   font-size: 0.625rem;
 }
@@ -1170,7 +1177,7 @@ span.newtoggle {
 }
 
 .formvazgec-btn {
-  background: #dc3545;
+  background: rgb(40, 152, 236);
   color: rgb(254, 254, 254);
   border: none;
   cursor: pointer;
@@ -2050,6 +2057,7 @@ span.newtoggle {
 .switch-container {
   display: flex;
   align-items: center;
+  margin-top: 30vh;
 }
 
 .switch {
@@ -2112,6 +2120,11 @@ span.newtoggle {
   height: 28px;
 }
 
+@media (max-width: 768px) {
+  .switch-container {
+    margin-top: 10% !important;
+  }
+}
 .custom-checkbox {
   display: none;
 }

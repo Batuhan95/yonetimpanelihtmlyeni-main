@@ -2,6 +2,7 @@
 .switch-container {
     display: flex;
     align-items: center;
+    margin-top: 30vh;
   }
   
   .switch {
@@ -69,4 +70,14 @@
         height: 28px;
     }
 
+  }
+  @media (max-width: 768px) {
+
+
+    .switch-container {
+   
+      margin-top: 10%!important;
+    }
+  
+  
   }

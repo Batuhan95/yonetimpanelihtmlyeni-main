@@ -1094,6 +1094,7 @@ body {
 .switch-container {
   display: flex;
   align-items: center;
+  margin-top: 30vh;
 }
 
 .switch {
@@ -1156,6 +1157,11 @@ body {
   height: 28px;
 }
 
+@media (max-width: 768px) {
+  .switch-container {
+    margin-top: 10% !important;
+  }
+}
 .treeview {
   width: 100%;
   background-color: var(--button-primary-color);

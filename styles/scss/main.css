@@ -160,12 +160,12 @@ body {
   padding: 5%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 831px) {
   .container {
     flex-direction: row;
   }
   .sidebar {
-    width: 250px;
+    width: 15%;
     height: auto;
   }
   .main-content {
@@ -197,7 +197,7 @@ body {
     color: rgb(40, 152, 236);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .header .title {
     display: none;
   }
@@ -291,7 +291,7 @@ body {
   background-color: transparent !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 831px) {
   .treeview {
     width: 30%;
     margin-right: 20px;
@@ -300,7 +300,7 @@ body {
     overflow-y: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 830px) {
   .treeview {
     width: 100%;
     margin-right: 20px;
@@ -374,7 +374,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 830px) {
   .table {
     width: 100%;
     padding: 10px;
@@ -2058,6 +2058,7 @@ span.newtoggle {
 .switch-container {
   display: flex;
   align-items: center;
+  margin-top: 30vh;
 }
 
 .switch {
@@ -2120,6 +2121,11 @@ span.newtoggle {
   height: 28px;
 }
 
+@media (max-width: 768px) {
+  .switch-container {
+    margin-top: 10% !important;
+  }
+}
 .custom-checkbox {
   display: none;
 }

@@ -188,13 +188,13 @@ body {
     flex-direction: column;
     padding: 5%;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 831px) {
     .container {
       flex-direction: row;
     }
   
     .sidebar {
-      width: 250px;
+      width: 15%;
       height: auto;
     }
   
@@ -241,7 +241,7 @@ body {
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 830px) {
     .header {
       .title {
         display: none;
