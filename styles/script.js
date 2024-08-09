@@ -240,3 +240,31 @@ function temadegisitr() {
       body.classList.add('light-theme');
     }
   };
+
+  (function createLoadingScreen() {
+    //
+    let loader = document.createElement("div");
+    loader.setAttribute("id", "loaderContainer");
+    //
+    let innerLoader = document.createElement("div");
+    loader.appendChild(innerLoader);
+    innerLoader.classList.add("loader");
+    //LOGO
+    let logoLoader = document.createElement("img");
+    logoLoader.setAttribute("src", "./images/loader3.png")
+    loader.appendChild(logoLoader);
+    logoLoader.classList.add("logoLoader");
+  
+    document.body.getElementsByTagName("main")[0].appendChild(loader);
+  })();
+  
+  function toggleLoadingScreenDisplay() {
+    let loadingScreen = document.getElementById("loaderContainer");
+    if (window.getComputedStyle(loadingScreen).visibility == "visible") {
+      loadingScreen.style.visibility = "hidden";
+    }
+    else {
+      loadingScreen.style.visibility = "visible";
+    }
+  }
+  

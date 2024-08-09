@@ -514,7 +514,7 @@ span.newtoggle {
   margin-left: 40%;
 }
 .modal-newcontent .divicerigi {
-  max-height: 700px;
+  max-height: 70vh;
   overflow-y: auto;
 }
 .modal-newcontent .close {
@@ -2124,6 +2124,43 @@ span.newtoggle {
 @media (max-width: 768px) {
   .switch-container {
     margin-top: 10% !important;
+  }
+}
+#loaderContainer {
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  z-index: 9999;
+  min-height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+#loaderContainer .loader {
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top: 10px solid #283d5c;
+  width: 135px;
+  height: 135px; /* Safari */
+  animation: loaderspin 3s linear infinite;
+  background-color: lightgrey;
+}
+#loaderContainer .logoLoader {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  z-index: 2;
+}
+
+@keyframes loaderspin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .custom-checkbox {
